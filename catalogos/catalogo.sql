@@ -399,7 +399,7 @@ INSERT INTO
 VALUES
     ('Pendiente'),
     ('Finalizado'),
-    ('Rechazado')
+    ('Rechazado'),
     ('Revisión');
 
 INSERT INTO

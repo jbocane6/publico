@@ -370,6 +370,24 @@ VALUES
     (800, 1, 3);
 
 INSERT INTO
+    [dbo].[reward_currency] (
+        [rewardCurrencyValue],
+        [rewardCurrencyActive],
+        [requirementId]
+    )
+VALUES
+    (400, 1, 4);
+
+INSERT INTO
+    [dbo].[reward_currency] (
+        [rewardCurrencyValue],
+        [rewardCurrencyActive],
+        [sponsor]
+    )
+VALUES
+    (1000, 1, 1);
+
+INSERT INTO
     dbo.requirement("requirementName")
 VALUES
     ('Derecho de petición'),
@@ -419,7 +437,7 @@ VALUES
     ('Eliminar Datos');
 
 INSERT INTO
-    dbo.company(
+    dbo.(
         companyId,
         companyBussinesName,
         companyComertialName,
@@ -436,7 +454,7 @@ VALUES
         'Vecino SAS',
         'Tiendas vecino',
         '123456790',
-        '3215988968',
+        '321company5988968',
         'shisho253@yahoo.com',
         'logos/123456790/logo.png',
         1,
@@ -2716,19 +2734,19 @@ INSERT INTO
         [politicId]
     )
 VALUES
-    ('politics/GENERAL-USER.pdf','1.0', 1, 1),
-    ('politics/GENERAL-BUYER.pdf','1.0', 1, 2),
-    ('politics/PREMIUM-USER.pdf','1.0', 0, 3),
-    ('politics/PLUS-USER.pdf','1.0', 1, 4),
-    ('politics/CONTROL-USER.pdf','1.0', 1, 5),
-    ('politics/DATA-USER.pdf','1.0', 1, 6),
-    ('politics/PREMIUM-USER.pdf','2.0', 1, 3),
-    ('politics/DATA-CONTROL.pdf','1.0', 1, 7),
-    ('politics/DATA-PLUS.pdf','1.0', 1, 8),
-    ('politics/DATA-PREMIUM.pdf','1.0', 1, 9),
+    ('politics/GENERAL-USER.pdf', '1.0', 1, 1),
+    ('politics/GENERAL-BUYER.pdf', '1.0', 1, 2),
+    ('politics/PREMIUM-USER.pdf', '1.0', 0, 3),
+    ('politics/PLUS-USER.pdf', '1.0', 1, 4),
+    ('politics/CONTROL-USER.pdf', '1.0', 1, 5),
+    ('politics/DATA-USER.pdf', '1.0', 1, 6),
+    ('politics/PREMIUM-USER.pdf', '2.0', 1, 3),
+    ('politics/DATA-CONTROL.pdf', '1.0', 1, 7),
+    ('politics/DATA-PLUS.pdf', '1.0', 1, 8),
+    ('politics/DATA-PREMIUM.pdf', '1.0', 1, 9),
     (
-       'politics/MOVISTAR-USER.pdf',
-       '1.0',
+        'politics/MOVISTAR-USER.pdf',
+        '1.0',
         1,
         10
     );

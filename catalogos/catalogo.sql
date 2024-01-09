@@ -853,7 +853,7 @@ VALUES
     (
         '72FF423E-F36B-1410-86B4-00CBB56CB138',
         'shisho253@yahoo.com',
-        'Pass123*',
+        '$2b$10$YWhKiPD4APyCNUXT/butkecK7idr6hsWkbEcoWrHzOneGjO1DJw5G',
         1,
         1,
         '70FF423E-F36B-1410-86B4-00CBB56CB138'
@@ -861,7 +861,7 @@ VALUES
     (
         'c181dc5a-9d04-405a-8001-b986c36b553c',
         'notificacionesjudiciales@telefonica.com',
-        'Pass123*',
+        '$2b$10$YWhKiPD4APyCNUXT/butkecK7idr6hsWkbEcoWrHzOneGjO1DJw5G',
         1,
         1,
         '321088ce-3276-4b31-87d5-dd3770a29a37'

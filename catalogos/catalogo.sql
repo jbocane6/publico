@@ -801,7 +801,8 @@ INSERT INTO
         buyerActive,
         buyerRepresentativeIdNum,
         companyId,
-        buyerRepresentativeIdType
+        buyerRepresentativeIdType,
+        buyerExpeditionCity
     )
 VALUES
     (
@@ -813,7 +814,8 @@ VALUES
         1,
         '1026563730',
         '8450f246-41cf-4fef-81ac-d3727c33e3c1',
-        1
+        1,
+        'bogota'
     ),
     (
         '321088ce-3276-4b31-87d5-dd3770a29a37',
@@ -824,7 +826,8 @@ VALUES
         1,
         '1073924878',
         '0e76433e-f36b-1410-81c2-009e18c9ad57',
-        1
+        1,
+        'bogota'
     );
 
 INSERT INTO

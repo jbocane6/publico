@@ -801,7 +801,8 @@ INSERT INTO
         buyerActive,
         buyerRepresentativeIdNum,
         companyId,
-        buyerRepresentativeIdType
+        buyerRepresentativeIdType,
+        buyerExpeditionCity
     )
 VALUES
     (
@@ -813,7 +814,8 @@ VALUES
         1,
         '1026563730',
         '8450f246-41cf-4fef-81ac-d3727c33e3c1',
-        1
+        1,
+        "Bogotá"
     ),
     (
         '321088ce-3276-4b31-87d5-dd3770a29a37',
@@ -824,7 +826,8 @@ VALUES
         1,
         '1073924878',
         '0e76433e-f36b-1410-81c2-009e18c9ad57',
-        1
+        1,
+        "Bogotá"
     );
 
 INSERT INTO
@@ -1544,6 +1547,9 @@ VALUES
     ('BUYER', 'PLUS', 'GET', 0),
     ('BUYER', 'PLUS', 'PATCH', 0),
     ('BUYER', 'PLUS', 'DELETE', 0),
+    ('BD_PRICES', 'PLUS', 'POST', 0),
+    ('BD_PRICES', 'PLUS', 'GET', 0),
+    ('BD_PRICES', 'PLUS', 'PATCH', 0),
     ('BUYERCREDENTIAL', 'PLUS', 'POST', 0),
     ('BUYERCREDENTIAL', 'PLUS', 'GET', 0),
     ('BUYERCREDENTIAL', 'PLUS', 'PATCH', 0),
@@ -1700,6 +1706,9 @@ VALUES
     ('BUYER', 'CONTROL', 'GET', 0),
     ('BUYER', 'CONTROL', 'PATCH', 0),
     ('BUYER', 'CONTROL', 'DELETE', 0),
+    ('BD_PRICES', 'CONTROL', 'POST', 0),
+    ('BD_PRICES', 'CONTROL', 'GET', 0),
+    ('BD_PRICES', 'CONTROL', 'PATCH', 0),
     ('BUYERCREDENTIAL', 'CONTROL', 'POST', 0),
     ('BUYERCREDENTIAL', 'CONTROL', 'GET', 0),
     ('BUYERCREDENTIAL', 'CONTROL', 'PATCH', 0),
@@ -1861,6 +1870,9 @@ VALUES
     ('BUYER', 'PREMIUM', 'GET', 0),
     ('BUYER', 'PREMIUM', 'PATCH', 0),
     ('BUYER', 'PREMIUM', 'DELETE', 0),
+    ('BD_PRICES', 'PREMIUM', 'POST', 0),
+    ('BD_PRICES', 'PREMIUM', 'GET', 0),
+    ('BD_PRICES', 'PREMIUM', 'PATCH', 0),
     ('BUYERCREDENTIAL', 'PREMIUM', 'POST', 0),
     ('BUYERCREDENTIAL', 'PREMIUM', 'GET', 0),
     ('BUYERCREDENTIAL', 'PREMIUM', 'PATCH', 0),
@@ -2022,6 +2034,9 @@ VALUES
     ('BUYER', 'ABOGADO', 'GET', 1),
     ('BUYER', 'ABOGADO', 'PATCH', 0),
     ('BUYER', 'ABOGADO', 'DELETE', 0),
+    ('BD_PRICES', 'ABOGADO', 'POST', 0),
+    ('BD_PRICES', 'ABOGADO', 'GET', 0),
+    ('BD_PRICES', 'ABOGADO', 'PATCH', 0),
     ('BUYERCREDENTIAL', 'ABOGADO', 'POST', 0),
     ('BUYERCREDENTIAL', 'ABOGADO', 'GET', 0),
     ('BUYERCREDENTIAL', 'ABOGADO', 'PATCH', 0),
@@ -2183,6 +2198,9 @@ VALUES
     ('BUYER', 'OPERATIVO', 'GET', 1),
     ('BUYER', 'OPERATIVO', 'PATCH', 1),
     ('BUYER', 'OPERATIVO', 'DELETE', 1),
+    ('BD_PRICES', 'OPERATIVO', 'POST', 1),
+    ('BD_PRICES', 'OPERATIVO', 'GET', 1),
+    ('BD_PRICES', 'OPERATIVO', 'PATCH', 1),
     ('BUYERCREDENTIAL', 'OPERATIVO', 'POST', 1),
     ('BUYERCREDENTIAL', 'OPERATIVO', 'GET', 1),
     ('BUYERCREDENTIAL', 'OPERATIVO', 'PATCH', 1),
@@ -2354,6 +2372,9 @@ VALUES
     ('BUYER', 'ADMINISTRATIVO', 'GET', 1),
     ('BUYER', 'ADMINISTRATIVO', 'PATCH', 1),
     ('BUYER', 'ADMINISTRATIVO', 'DELETE', 1),
+    ('BD_PRICES', 'ADMINISTRATIVO', 'POST', 1),
+    ('BD_PRICES', 'ADMINISTRATIVO', 'GET', 1),
+    ('BD_PRICES', 'ADMINISTRATIVO', 'PATCH', 1),
     ('BUYERCREDENTIAL', 'ADMINISTRATIVO', 'POST', 1),
     ('BUYERCREDENTIAL', 'ADMINISTRATIVO', 'GET', 1),
     ('BUYERCREDENTIAL', 'ADMINISTRATIVO', 'PATCH', 1),
@@ -2534,7 +2555,11 @@ VALUES
     ('SUBCATEGORY', 'ADMINISTRATIVO', 'POST', 1),
     ('SUBCATEGORY', 'ADMINISTRATIVO', 'GET', 1),
     ('SUBCATEGORY', 'ADMINISTRATIVO', 'PATCH', 1),
-    ('SUBCATEGORY', 'ADMINISTRATIVO', 'DELETE', 1),
+    ('SUBCATEGORY', 'ADMINISTRATIVO', 'DELETE', 1);
+
+INSERT INTO
+    role_permission
+VALUES
     ('USER', 'ADMINISTRATIVO', 'POST', 1),
     ('USER', 'ADMINISTRATIVO', 'GET', 1),
     ('USER', 'ADMINISTRATIVO', 'PATCH', 1),
@@ -2555,6 +2580,9 @@ VALUES
     ('BUYER', 'BUYER', 'GET', 0),
     ('BUYER', 'BUYER', 'PATCH', 1),
     ('BUYER', 'BUYER', 'DELETE', 0),
+    ('BD_PRICES', 'BUYER', 'POST', 1),
+    ('BD_PRICES', 'BUYER', 'GET', 1),
+    ('BD_PRICES', 'BUYER', 'PATCH', 0),
     ('BUYERCREDENTIAL', 'BUYER', 'POST', 1),
     ('BUYERCREDENTIAL', 'BUYER', 'GET', 0),
     ('BUYERCREDENTIAL', 'BUYER', 'PATCH', 1),
@@ -2569,11 +2597,7 @@ VALUES
     ('CITY', 'BUYER', 'DELETE', 0),
     ('COMPANY', 'BUYER', 'POST', 1),
     ('COMPANY', 'BUYER', 'GET', 0),
-    ('COMPANY', 'BUYER', 'PATCH', 1);
-
-INSERT INTO
-    role_permission
-VALUES
+    ('COMPANY', 'BUYER', 'PATCH', 1),
     ('COMPANY', 'BUYER', 'DELETE', 0),
     ('COUNTRY', 'BUYER', 'POST', 0),
     ('COUNTRY', 'BUYER', 'GET', 1),

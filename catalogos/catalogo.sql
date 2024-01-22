@@ -763,7 +763,7 @@ VALUES
         'Teléfonica Movistar',
         '830122566',
         '3216051674',
-        'notificacionesjudiciales@telefonica.com',
+        'contactomovistar@gmail.com',
         'logos/830122566/logo.png',
         1,
         1
@@ -863,7 +863,7 @@ VALUES
     ),
     (
         'c181dc5a-9d04-405a-8001-b986c36b553c',
-        'notificacionesjudiciales@telefonica.com',
+        'contactomovistar@gmail.com',
         '$2b$10$YWhKiPD4APyCNUXT/butkecK7idr6hsWkbEcoWrHzOneGjO1DJw5G',
         1,
         1,

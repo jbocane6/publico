@@ -1312,7 +1312,7 @@ VALUES
         'Banco De Bogota',
         '860002964',
         '3213113703',
-        'contacto@BancoBogota.com',
+        'contacto@bancobogota.com',
         'logos/860002964/logo.png',
         1,
         0
@@ -1323,7 +1323,7 @@ VALUES
         'Banco BBVA',
         '860003020',
         '3015008106',
-        'contacto@BBVA.com',
+        'contacto@bbva.com',
         'logos/860003020/logo.png',
         1,
         0
@@ -1334,7 +1334,7 @@ VALUES
         'Banco Caja Social',
         '860007335',
         '3212740388',
-        'contacto@BCSC.com',
+        'contacto@bcsc.com',
         'logos/860007335/logo.png',
         1,
         0
@@ -1345,7 +1345,7 @@ VALUES
         'Banco Popular',
         '860007738',
         '3132341167',
-        'contacto@BancoPopular.com',
+        'contacto@bancopopular.com',
         'logos/860007738/logo.png',
         1,
         0
@@ -1356,7 +1356,7 @@ VALUES
         'Banco Davivienda',
         '860034313',
         '3224634591',
-        'contacto@Davivienda.com',
+        'contacto@davivienda.com',
         'logos/860034313/logo.png',
         1,
         0
@@ -1367,7 +1367,7 @@ VALUES
         'Banco Colpatria',
         '860034594',
         '3126432686',
-        'contacto@Colpatria.com',
+        'contacto@colpatria.com',
         'logos/860034594/logo.png',
         1,
         0
@@ -1378,7 +1378,7 @@ VALUES
         'Banco Av Villas',
         '860035827',
         '3184803353',
-        'contacto@AvVillas.com',
+        'contacto@avvillas.com',
         'logos/860035827/logo.png',
         1,
         0
@@ -1389,7 +1389,7 @@ VALUES
         'Banco Gnb Sudameris',
         '860050750',
         '3015822316',
-        'contacto@BancoSudameris.com',
+        'contacto@bancosudameris.com',
         'logos/860050750/logo.png',
         1,
         0
@@ -1400,7 +1400,7 @@ VALUES
         'Citibank',
         '860051135',
         '3196742139',
-        'contacto@Citibank.com',
+        'contacto@citibank.com',
         'logos/860051135/logo.png',
         1,
         0
@@ -1411,7 +1411,7 @@ VALUES
         'Banco Pichincha',
         '890200756',
         '3065266782',
-        'contacto@BancoPichincha.com',
+        'contacto@bancopichincha.com',
         'logos/890200756/logo.png',
         1,
         0
@@ -1422,7 +1422,7 @@ VALUES
         'Banco Itau',
         '890903937',
         '3113275948',
-        'contacto@BancoItau.com',
+        'contacto@bancoitau.com',
         'logos/890903937/logo.png',
         1,
         0
@@ -1433,7 +1433,7 @@ VALUES
         'Banco Falabella',
         '900047981',
         '3283156049',
-        'contacto@BancoFalabella.com',
+        'contacto@bancofalabella.com',
         'logos/900047981/logo.png',
         1,
         0
@@ -1444,7 +1444,7 @@ VALUES
         'Tiendas Metro',
         '900155107',
         '3206999786',
-        'Servicio.al.Cliente@cencosud.com.co',
+        'contacto@tiendasmetro.com.co',
         'logos/900155107/logo.png',
         1,
         1
@@ -1455,7 +1455,7 @@ VALUES
         'Tiendas D1',
         '900276962',
         '3026416977',
-        'contacto@D1.com',
+        'contacto@tiendasd1.com',
         'logos/900276962/logo.png',
         1,
         1
@@ -1466,7 +1466,7 @@ VALUES
         'Virgin Mobile',
         '900420122',
         '3175157243',
-        'contacto@VirginMobile.com',
+        'contacto@virginmobile.com',
         'logos/900420122/logo.png',
         1,
         1
@@ -1477,7 +1477,7 @@ VALUES
         'Wom',
         '900424796',
         '3136456382',
-        'contacto@Wom.com',
+        'contacto@wom.com',
         'logos/900424796/logo.png',
         1,
         1
@@ -1488,7 +1488,7 @@ VALUES
         'Tiendas Ara',
         '900618429',
         '3225857809',
-        'contacto@Ara.com',
+        'contacto@tiendasara.com',
         'logos/900618429/logo.png',
         1,
         1
@@ -1499,7 +1499,7 @@ VALUES
         'Movii',
         '901077952',
         '3238874965',
-        'contacto@Movii.com',
+        'contacto@movii.com',
         'logos/901077952/logo.png',
         1,
         1
@@ -1510,7 +1510,7 @@ VALUES
         'Lulo Bank',
         '901383474',
         '3266438993',
-        'contacto@LuloBank.com',
+        'contacto@lulobank.com',
         'logos/901383474/logo.png',
         1,
         0
@@ -1521,7 +1521,7 @@ VALUES
         'Nequi',
         '901633276',
         '3207040104',
-        'contacto@Nequi.com',
+        'contacto@nequi.com',
         'logos/901633276/logo.png',
         1,
         0
@@ -1532,7 +1532,7 @@ VALUES
         'Claro',
         '805014822',
         '3044266250',
-        'contacto@Claro.com',
+        'contacto@claro.com',
         'logos/805014822/logo.png',
         1,
         0
@@ -1543,7 +1543,7 @@ VALUES
         'Banco De Occidente',
         '890300279',
         '3018756957',
-        'contacto@BancodeOccidente.com',
+        'contacto@bancodeoccidente.com',
         'logos/890300279/logo.png',
         1,
         0
@@ -1565,7 +1565,7 @@ VALUES
         'Bancolombia',
         '890903938',
         '3254255760',
-        'contacto@Bancolombia.com',
+        'contacto@bancolombia.com',
         'logos/890903938/logo.png',
         1,
         0
@@ -1576,7 +1576,7 @@ VALUES
         'UNE',
         '900092385',
         '3034190315',
-        'contacto@Tigo.com',
+        'contacto@tigo.com',
         'logos/900092385/logo.png',
         1,
         1
@@ -1587,7 +1587,7 @@ VALUES
         'Banco Mundo Mujer',
         '900768933',
         '3258700724',
-        'contacto@BancoMundoMujer.com',
+        'contacto@bancomundomujer.com',
         'logos/900768933/logo.png',
         1,
         0
@@ -1598,7 +1598,7 @@ VALUES
         'ETB',
         '899999115',
         '3285012225',
-        'asuntos.contenciosos@etb.com.co',
+        'contacto@etb.com',
         'logos/899999115/logo.png',
         1,
         1
@@ -1620,7 +1620,7 @@ VALUES
         'Royal Films',
         '890105652',
         '3172774304',
-        'protecciondatos@royal-films.com',
+        'contacto@royalfilms.com',
         'logos/890105652/logo.png',
         1,
         1
@@ -1631,7 +1631,7 @@ VALUES
         'Supergiros',
         '900084777',
         '3294288882',
-        'servicioalcliente@supergiros.com.co',
+        'contacto@supergiros.com',
         'logos/900084777/logo.png',
         1,
         1

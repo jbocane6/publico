@@ -3586,6 +3586,7 @@ INSERT INTO
     role_permission
 VALUES
     ('AUTH', 'CATALOGUE', 'POST', 1),
+    ('AUTH', 'CATALOGUE', 'PATCH', 1),
     ('BUYER', 'CATALOGUE', 'POST', 0),
     ('BUYER', 'CATALOGUE', 'GET', 0),
     ('BUYER', 'CATALOGUE', 'PATCH', 0),

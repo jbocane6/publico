@@ -3587,6 +3587,13 @@ INSERT INTO
 VALUES
     ('AUTH', 'CATALOGUE', 'POST', 1),
     ('AUTH', 'CATALOGUE', 'PATCH', 1),
+    ('AUTH', 'CONTROL', 'PATCH', 1),
+    ('AUTH', 'PLUS', 'PATCH', 1),
+    ('AUTH', 'PREMIUM', 'PATCH', 1),
+    ('AUTH', 'BUYER', 'PATCH', 1),
+    ('AUTH', 'ADMINISTRATIVO', 'PATCH', 1),
+    ('AUTH', 'ABOGADO', 'PATCH', 1),
+    ('AUTH', 'OPERATIVO', 'PATCH', 1),
     ('BUYER', 'CATALOGUE', 'POST', 1),
     ('BUYER', 'CATALOGUE', 'GET', 0),
     ('BUYER', 'CATALOGUE', 'PATCH', 0),

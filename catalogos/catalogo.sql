@@ -1178,7 +1178,10 @@ INSERT INTO
 VALUES
     ('Masculino'),
     ('Femenino'),
-    ('Otro');
+    ('Otro'),
+    ('No binario'),
+    ('Transgénero'),
+    ('Prefiero no decir');
 
 INSERT INTO
     dbo.ident_document("identDocName")

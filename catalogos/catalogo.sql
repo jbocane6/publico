@@ -1421,7 +1421,7 @@ VALUES
     ),
     (
         'a875433e-f36b-1410-81c2-009e18c9ad57',
-        'Itau Corpbanca Colombia Sa',
+        'Itaú Corpbanca Colombia Sa',
         'Banco Itaú',
         '890903937',
         '3113275948',

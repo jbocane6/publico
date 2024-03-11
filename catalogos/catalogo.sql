@@ -1311,8 +1311,8 @@ VALUES
     ),
     (
         '6c75433e-f36b-1410-81c2-009e18c9ad57',
-        'Banco De Bogota',
-        'Banco De Bogota',
+        'Banco De Bogotá',
+        'Banco De Bogotá',
         '860002964',
         '3213113703',
         'contacto@bancobogota.com',
@@ -1422,7 +1422,7 @@ VALUES
     (
         'a875433e-f36b-1410-81c2-009e18c9ad57',
         'Itau Corpbanca Colombia Sa',
-        'Banco Itau',
+        'Banco Itaú',
         '890903937',
         '3113275948',
         'contacto@bancoitau.com',
@@ -1520,7 +1520,7 @@ VALUES
     ),
     (
         'de75433e-f36b-1410-81c2-009e18c9ad57',
-        'Nequi S A Compania De Financiamiento',
+        'Nequi S A Compañía De Financiamiento',
         'Nequi',
         '901633276',
         '3207040104',
@@ -1553,8 +1553,8 @@ VALUES
     ),
     (
         'f075433e-f36b-1410-81c2-009e18c9ad57',
-        'Almacenes Exito S.a.',
-        'Supermercado Exito',
+        'Almacenes Éxito S.a.',
+        'Supermercado Éxito',
         '890900608',
         '3206295989',
         'contacto@exito.com',
@@ -1609,7 +1609,7 @@ VALUES
     (
         '0e76433e-f36b-1410-81c2-009e18c9ad57',
         'Colombia Telecomunicaciones S.A. ESP',
-        'Teléfonica Movistar',
+        'Telefónica Movistar',
         '830122566',
         '3216051674',
         'contactomovistar@gmail.com',

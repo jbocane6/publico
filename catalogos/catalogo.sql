@@ -2495,7 +2495,7 @@ VALUES
     ('REQUIREMENT-BODY', 'PLUS', 'GET', 1),
     ('REQUIREMENT-BODY', 'PLUS', 'PATCH', 0),
     ('REQUIREMENT-BODY', 'PLUS', 'DELETE', 0),
-    ('REWARD', 'PLUS', 'POST', 0),
+    ('REWARD', 'PLUS', 'POST', 1),
     ('REWARD', 'PLUS', 'GET', 1),
     ('REWARD', 'PLUS', 'PATCH', 0),
     ('REWARD', 'PLUS', 'DELETE', 0),

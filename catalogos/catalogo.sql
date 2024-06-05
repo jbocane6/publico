@@ -1270,20 +1270,20 @@ VALUES
     ('Revisión');
 
 INSERT INTO
-    [dbo].[pqr] ([pqrsName])
+    [dbo].[pqr] (pqrsName, pqrsText, pqrsIcon)
 VALUES
-    ('Petición'),
-    ('Queja'),
-    ('Reclamo'),
-    ('Sugerencia'),
-    ('Felicitación'),
-    ('Registrar Empresa'),
-    ('Pago Bloqueo'),
-    ('Pago Compra'),
-    ('Respuesta Bloqueo'),
-    ('Contacto no Autorizado'),
-    ('Eliminar Cuenta'),
-    ('Eliminar Datos');
+    ('Petición', 'Peticiones: *Selecciona esta opción si deseas solicitar a *tudata *cualquier información relacionada con la prestación del servicio (tales como información específica sobre cada plan ofrecido).', 'pqrsIcons/peticiones.svg'),
+    ('Queja', 'Quejas: *Selecciona esta opción si deseas reportar cualquier insatisfacción con la conducta o la acción del personal de *tudata. *También incluye cualquier problema que tengas con la aplicación.', 'pqrsIcons/quejas.svg'),
+    ('Reclamo', 'Reclamos: *Selecciona esta opción si deseas solicitarnos corregir, actualizar o suprimir tus datos personales. También puedes revocar la autorización que nos diste para tratar tus datos personales, aunque esto queda supeditado a lo establecido en la ley de protección de datos personales. También se refiere a los casos en que consideres que *tudata *ha vulnerado tus derechos de Hábeas Data o de Intimidad.', 'pqrsIcons/reclamos.svg'),
+    ('Sugerencia', 'Sugerencias: *Selecciona esta opción si deseas darnos a conocer tus ideas o propuestas para mejorar el servicio o la gestión de *tudata.', 'pqrsIcons/sugerencias.svg'),
+    ('Felicitación', 'Felicitaciones: *Selecciona esta opción si deseas manifestarnos tu agradecimiento o satisfacción hacia los productos, servicios, programas y/o personal de *tudata.', 'pqrsIcons/felicitaciones.svg'),
+    ('Registrar Empresa', '', ''),
+    ('Pago Bloqueo', '', ''),
+    ('Pago Compra', '', ''),
+    ('Consulta', 'Consultas: *Selecciona esta opción si deseas que *tudata *exprese su opinión o concepto sobre algún tema relacionado con nuestros productos y servicios. También puedes usarla si deseas acceder a tu información personal que repose en cualquiera de nuestras bases de datos.', 'pqrsIcons/consultas.svg'),
+    ('Contacto no Autorizado', '', ''),
+    ('Eliminar Cuenta', '', ''),
+    ('Eliminar Datos', '', '');
 
 INSERT INTO
     dbo.company(

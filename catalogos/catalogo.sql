@@ -3426,7 +3426,7 @@ VALUES
     ('PQRS', 'ADMINISTRATIVO', 'PATCH', 1),
     ('PQRS', 'ADMINISTRATIVO', 'DELETE', 1),
     ('BUYER', 'BUYER', 'POST', 1),
-    ('BUYER', 'BUYER', 'GET', 0),
+    ('BUYER', 'BUYER', 'GET', 1),
     ('BUYER', 'BUYER', 'PATCH', 1),
     ('BUYER', 'BUYER', 'DELETE', 0),
     ('BD-PRICES', 'BUYER', 'POST', 1),

@@ -3941,3 +3941,17 @@ VALUES
     (1001, 5000, 41000, 0, 2),
     (5001, 10000, 51000, 0, 2),
     (10001, 1000000, 61000, 0, 2);
+
+insert into company(companyBussinesName,companyNit,companyComertialName,companyPhone,
+companyEmail,companyLogoPath,directRemitent,cityId,companyUsed) values (
+  '00000000-0000-0000-0000-000000000000',
+    'Ofuscated',
+    '000000000',
+    'Ofuscated',
+    '0000000000',
+    'ofuscated@ofuscated.ofuscated',
+    'null',
+    '0',
+    1,
+    '0'
+);

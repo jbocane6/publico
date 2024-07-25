@@ -2783,7 +2783,11 @@ VALUES
         1
     ),
     ('PAYOUT', 'PLUS', 'GET', 1),
-    ('PAYOUT', 'PREMIUM', 'GET', 1);
+    ('PAYOUT', 'PREMIUM', 'GET', 1),
+    ('PACKAGE', 'OPERATIVO', 'GET', 1)
+    ('PACKAGE', 'ADMINISTRATIVO ', 'GET', 1)
+    ('PACKAGE', 'ADMINISTRATIVO ', 'POST', 1)
+    ('PACKAGE', 'ADMINISTRATIVO ', 'PATCH', 1);
 
 INSERT INTO
     [dbo].[politic] ([politicName])

@@ -2801,7 +2801,11 @@ VALUES
     ('DATA-CONTROL'),
     ('DATA-PLUS'),
     ('DATA-PREMIUM'),
-    ('MOVISTAR-USER');
+    ('MOVISTAR-USER'),
+    ('POLITICS-DATA'),
+    ('CONTROL-CONTRACT'),
+    ('PLUS-CONTRACT'),
+    ('PREMIUM-CONTRACT');
 
 INSERT INTO
     [dbo].[politic_body] (
@@ -2825,7 +2829,11 @@ VALUES
         '1.0',
         1,
         10
-    );
+    ),
+    ('politics/DATA-POLITICS.pdf', '1.0', 1, 11),
+    ('politics/CONTROL-CONTRACT.pdf', '1.0', 1, 12),
+    ('politics/PLUS-CONTRACT.pdf', '1.0', 1, 13),
+    ('politics/PREMIUM-CONTRACT.pdf', '1.0', 1, 14);
 
 /* INSERT INTO [dbo].[sponsor_code] ([sponsorCode], [documentNumber], [companyId])
  VALUES

@@ -1214,7 +1214,8 @@ VALUES
     ('Derecho de petición'),
     ('Recurso de reposición'),
     ('Tutela'),
-    ('Queja ante SIC');
+    ('Queja ante SIC')
+    ('Tutela por no respuesta'),;
 
 INSERT INTO
     [dbo].[reward_currency] (
@@ -2863,4 +2864,5 @@ VALUES
     ('BASIC', 0, 1, 2, '1.0'),
     ('STANDARD', 20000, 1, 1, '1.0'),
     ('CONTROL3', 40000, 1, 3, '1.0'),
-    ('CONTROL5', 60000, 1, 5, '1.0');
+    ('CONTROL5', 60000, 1, 5, '1.0'),
+    ('CONTROLFULL', 0, 1, 9999, '1.0'),;

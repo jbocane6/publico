@@ -2869,4 +2869,5 @@ VALUES
 insert into category_company(categoryCompanyName, categoryCompanyUsed) VALUES
 ('Entidad bancaria', 1),
 ('Servicios públicos', 1),
-('Uncategorized', 1);
+('Uncategorized', 1),
+('Sin Canal', 1);

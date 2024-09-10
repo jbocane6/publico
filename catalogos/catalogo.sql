@@ -2866,3 +2866,7 @@ VALUES
     ('CONTROL3', 40000, 1, 3, '1.0'),
     ('CONTROL5', 60000, 1, 5, '1.0'),
     ('CONTROLFULL', 0, 1, 9999, '1.0'),;
+insert into category_company(categoryCompanyName, categoryCompanyUsed) VALUES
+('Entidad bancaria', 1),
+('Servicios públicos', 1),
+('Uncategorized', 1);

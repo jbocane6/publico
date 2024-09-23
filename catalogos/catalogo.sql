@@ -1194,7 +1194,7 @@ INSERT INTO
 VALUES
     (
         'Control',
-        'Este plan te permitirá bloquear tres entidades empresariales sin ningún costo.',
+        'Este plan te permitirá bloquear dos entidades empresariales sin ningún costo.',
         'plans/tudatacontrol.png'
     ),
     (

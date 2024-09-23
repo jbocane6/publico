@@ -1213,9 +1213,10 @@ INSERT INTO
 VALUES
     ('Derecho de petición'),
     ('Recurso de reposición'),
-    ('Tutela'),
+    ('Tutela Habeas Data'),
     ('Queja ante SIC')
-    ('Tutela por no respuesta'),;
+    ('Tutela por no respuesta'),
+    ('Tutela por respuesta incompleta');
 
 INSERT INTO
     [dbo].[reward_currency] (

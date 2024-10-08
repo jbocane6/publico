@@ -2753,7 +2753,7 @@ VALUES
     ('DATA-PLUS'),
     ('DATA-PREMIUM'),
     ('MOVISTAR-USER'),
-    ('POLITICS-DATA'),
+    ('DATA-POLITICS'),
     ('CONTROL-CONTRACT'),
     ('PLUS-CONTRACT'),
     ('PREMIUM-CONTRACT');
@@ -2763,28 +2763,32 @@ INSERT INTO
         [politicText],
         [politicVersion],
         [politicState],
-        [politicId]
+        [politicId],
+        [politicTitle]
     )
 VALUES
-    ('politics/GENERAL-USER.pdf', '1.0', 1, 1),
-    ('politics/GENERAL-BUYER.pdf', '1.0', 1, 2),
-    ('politics/PREMIUM-USER.pdf', '1.0', 1, 3),
-    ('politics/PLUS-USER.pdf', '1.0', 1, 4),
-    ('politics/CONTROL-USER.pdf', '1.0', 1, 5),
-    ('politics/DATA-USER.pdf', '1.0', 1, 6),
-    ('politics/DATA-CONTROL.pdf', '1.0', 1, 7),
-    ('politics/DATA-PLUS.pdf', '1.0', 1, 8),
-    ('politics/DATA-PREMIUM.pdf', '1.0', 1, 9),
+    ('politics/GENERAL-USER.pdf', '1.0', 1, 1, 'Términos y Condiciones generales.'),
+    ('politics/GENERAL-BUYER.pdf', '1.0', 1, 2, 'Términos y Condiciones generales.'),
+    ('politics/PREMIUM-USER.pdf', '1.0', 0, 3, 'Términos y Condiciones específicos.'),
+    ('politics/PLUS-USER.pdf', '1.0', 1, 4, 'Términos y Condiciones específicos.'),
+    ('politics/CONTROL-USER.pdf', '1.0', 1, 5, 'Términos y Condiciones específicos.'),
+    ('politics/DATA-USER.pdf', '1.0', 0, 6, 'Política de tratamiento de datos personales.'),
+    ('politics/PREMIUM-USER.pdf', '2.0', 1, 3, 'Términos y Condiciones específicos.')
+    ('politics/DATA-CONTROL.pdf', '1.0', 1, 7, 'Autorización para el tratamiento de datos personales.'),
+    ('politics/DATA-PLUS.pdf', '1.0', 1, 8, 'Autorización para el tratamiento de datos personales.'),
+    ('politics/DATA-PREMIUM.pdf', '1.0', 1, 9, 'Autorización para el tratamiento de datos personales.'),
     (
         'politics/MOVISTAR-USER.pdf',
         '1.0',
         1,
-        10
+        10,
+        'Términos y condiciones específicos MOVISTAR.'
     ),
-    ('politics/DATA-POLITICS.pdf', '1.0', 1, 11),
-    ('politics/CONTROL-CONTRACT.pdf', '1.0', 1, 12),
-    ('politics/PLUS-CONTRACT.pdf', '1.0', 1, 13),
-    ('politics/PREMIUM-CONTRACT.pdf', '1.0', 1, 14);
+    ('politics/DATA-POLITICS.pdf', '1.0', 0, 11, 'Política de tratamiento de datos personales.'),
+    ('politics/DATA-POLITICS.pdf', '2.0', 1, 11, 'Política de tratamiento de datos personales.'),
+    ('politics/CONTROL-CONTRACT.pdf', '1.0', 1, 12, 'Contrato de mandato Data Control.'),
+    ('politics/PLUS-CONTRACT.pdf', '1.0', 1, 13, 'Contrato de mandato Data Más.'),
+    ('politics/PREMIUM-CONTRACT.pdf', '1.0', 1, 14, 'Contrato de mandato Data Premium.');
 
 /* INSERT INTO [dbo].[sponsor_code] ([sponsorCode], [documentNumber], [companyId])
  VALUES

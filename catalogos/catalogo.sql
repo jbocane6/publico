@@ -2773,7 +2773,7 @@ VALUES
     ('politics/PLUS-USER.pdf', '1.0', 1, 4, 'Términos y Condiciones específicos.'),
     ('politics/CONTROL-USER.pdf', '1.0', 1, 5, 'Términos y Condiciones específicos.'),
     ('politics/DATA-USER.pdf', '1.0', 0, 6, 'Política de tratamiento de datos personales.'),
-    ('politics/PREMIUM-USER.pdf', '2.0', 1, 3, 'Términos y Condiciones específicos.')
+    ('politics/PREMIUM-USER.pdf', '2.0', 1, 3, 'Términos y Condiciones específicos.'),
     ('politics/DATA-CONTROL.pdf', '1.0', 1, 7, 'Autorización para el tratamiento de datos personales.'),
     ('politics/DATA-PLUS.pdf', '1.0', 1, 8, 'Autorización para el tratamiento de datos personales.'),
     ('politics/DATA-PREMIUM.pdf', '1.0', 1, 9, 'Autorización para el tratamiento de datos personales.'),

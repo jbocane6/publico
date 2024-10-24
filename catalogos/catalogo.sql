@@ -1,14 +1,8 @@
 USE tudata;
-
-INSERT INTO
-    dbo.country ("countryName")
-VALUES
-    ('Colombia');
-
-INSERT INTO
-    dbo.state ("stateName", "CountryId")
-VALUES
-    ('Amazonas', 1),
+INSERT INTO dbo.country ("countryName")
+VALUES ('Colombia');
+INSERT INTO dbo.state ("stateName", "CountryId")
+VALUES ('Amazonas', 1),
     ('Antioquia', 1),
     ('Arauca', 1),
     ('Atlántico', 1),
@@ -41,11 +35,8 @@ VALUES
     ('Valle del Cauca', 1),
     ('Vaupés', 1),
     ('Vichada', 1);
-
-INSERT INTO
-    dbo.city("cityName", "stateId")
-VALUES
-    ('Leticia', 1),
+INSERT INTO dbo.city("cityName", "stateId")
+VALUES ('Leticia', 1),
     ('El Encanto', 1),
     ('La Chorrera', 1),
     ('La Pedrera', 1),
@@ -946,11 +937,8 @@ VALUES
     ('Balboa', 26),
     ('Dosquebradas', 26),
     ('Guática', 26);
-
-INSERT INTO
-    dbo.city("cityName", "stateId")
-VALUES
-    ('La Celia', 26),
+INSERT INTO dbo.city("cityName", "stateId")
+VALUES ('La Celia', 26),
     ('La Virginia', 26),
     ('Marsella', 26),
     ('Mistrató', 26),
@@ -1173,26 +1161,17 @@ VALUES
     ('La Primavera', 33),
     ('Santa Rosalía', 33),
     ('Cumaribo', 33);
-
-INSERT INTO
-    dbo.gender("genderType")
-VALUES
-    ('Masculino'),
+INSERT INTO dbo.gender("genderType")
+VALUES ('Masculino'),
     ('Femenino'),
     ('Otro'),
     ('No binario'),
     ('Transgénero'),
     ('Prefiero no decir');
-
-INSERT INTO
-    dbo.ident_document("identDocName")
-VALUES
-    ('Cédula de ciudadanía');
-
-INSERT INTO
-    [tudata].[dbo].[plan]("planName", "planTopics", "iconpath")
-VALUES
-    (
+INSERT INTO dbo.ident_document("identDocName")
+VALUES ('Cédula de ciudadanía');
+INSERT INTO [tudata].[dbo].[plan]("planName", "planTopics", "iconpath")
+VALUES (
         'Control',
         'Este plan te permitirá bloquear dos entidades empresariales sin ningún costo.',
         'plans/tudatacontrol.png'
@@ -1207,75 +1186,51 @@ VALUES
         'Podrás bloquear y autorizar tantas entidades como quieras y tendrás la opción para adicionar tus intereses de forma personalizada.',
         'plans/tudatapremium.png'
     );
-
-INSERT INTO
-    dbo.requirement("requirementName")
-VALUES
-    ('Derecho de petición'),
+INSERT INTO dbo.requirement("requirementName")
+VALUES ('Derecho de petición'),
     ('Recurso de reposición'),
     ('Tutela Habeas Data'),
     ('Queja ante SIC'),
     ('Tutela por no respuesta'),
     ('Tutela por respuesta incompleta');
-
-INSERT INTO
-    [dbo].[reward_currency] (
+INSERT INTO [dbo].[reward_currency] (
         [rewardCurrencyValue],
         [rewardCurrencyActive],
         [planId]
     )
-VALUES
-    (0, 1, 1),
+VALUES (0, 1, 1),
     (500, 1, 2),
     (800, 1, 3);
-
-INSERT INTO
-    [dbo].[reward_currency] (
+INSERT INTO [dbo].[reward_currency] (
         [rewardCurrencyValue],
         [rewardCurrencyActive],
         [requirementId]
     )
-VALUES
-    (400, 1, 4);
-
-INSERT INTO
-    [dbo].[reward_currency] (
+VALUES (400, 1, 4);
+INSERT INTO [dbo].[reward_currency] (
         [rewardCurrencyValue],
         [rewardCurrencyActive],
         [sponsor]
     )
-VALUES
-    (1000, 1, 1);
-
-INSERT INTO
-    [dbo].[role]([roleName])
-VALUES
-    ('CONTROL'),
+VALUES (1000, 1, 1);
+INSERT INTO [dbo].[role]([roleName])
+VALUES ('CONTROL'),
     ('PLUS'),
     ('PREMIUM'),
     ('ABOGADO'),
     ('OPERATIVO'),
     ('ADMINISTRATIVO'),
     ('BUYER');
-
-INSERT INTO
-    [dbo].[database_type] ([databaseType])
-VALUES
-    ('Simple'),
+INSERT INTO [dbo].[database_type] ([databaseType])
+VALUES ('Simple'),
     ('Especializada');
-
-INSERT INTO
-    [dbo].[status]([statusName])
-VALUES
-    ('Pendiente'),
+INSERT INTO [dbo].[status]([statusName])
+VALUES ('Pendiente'),
     ('Finalizado'),
     ('Rechazado'),
     ('Revisión');
-
-INSERT INTO
-    [dbo].[pqr] (pqrsName, pqrsText, pqrsIcon)
-VALUES
-    (
+INSERT INTO [dbo].[pqr] (pqrsName, pqrsText, pqrsIcon)
+VALUES (
         'Petición',
         'Peticiones: *Selecciona esta opción si deseas solicitar a *tudata *cualquier información relacionada con la prestación del servicio (tales como información específica sobre cada plan ofrecido).',
         'pqrsIcons/peticiones.svg'
@@ -1311,7 +1266,6 @@ VALUES
     ('Contacto no Autorizado', '', ''),
     ('Eliminar Cuenta', '', ''),
     ('Eliminar Datos', '', '');
-
 /* INSERT INTO
  dbo.company(
  companyId,
@@ -1352,10 +1306,8 @@ VALUES
  dbo.element("elementName", "subCategoryId")
  VALUES
  ('Ahorro de emergencia', 1); */
-insert into
-    role_permission
-values
-    ('BUYER', 'PLUS', 'POST', 0),
+insert into role_permission
+values ('BUYER', 'PLUS', 'POST', 0),
     ('BUYER', 'PLUS', 'GET', 0),
     ('BUYER', 'PLUS', 'PATCH', 0),
     ('BUYER', 'PLUS', 'DELETE', 0),
@@ -1474,10 +1426,10 @@ values
     ('ROLE-CREDENTIAL', 'PLUS', 'GET', 0),
     ('ROLE-CREDENTIAL', 'PLUS', 'PATCH', 0),
     ('ROLE-CREDENTIAL', 'PLUS', 'DELETE', 0),
-    ('SELECTION', 'PLUS', 'POST', 0),
+    ('SELECTION', 'PLUS', 'POST', 1),
     ('SELECTION', 'PLUS', 'GET', 0),
     ('SELECTION', 'PLUS', 'PATCH', 0),
-    ('SELECTION', 'PLUS', 'DELETE', 0),
+    ('SELECTION', 'PLUS', 'DELETE', 1),
     ('SHOPPING-DEMAND-HISTORY', 'PLUS', 'POST', 0),
     ('SHOPPING-DEMAND-HISTORY', 'PLUS', 'GET', 0),
     ('SHOPPING-DEMAND-HISTORY', 'PLUS', 'PATCH', 0),
@@ -1640,7 +1592,12 @@ values
     ('SHOPPING-DEMAND-HISTORY', 'CONTROL', 'POST', 0),
     ('SHOPPING-DEMAND-HISTORY', 'CONTROL', 'GET', 0),
     ('SHOPPING-DEMAND-HISTORY', 'CONTROL', 'PATCH', 0),
-    ('SHOPPING-DEMAND-HISTORY', 'CONTROL', 'DELETE', 0),
+    (
+        'SHOPPING-DEMAND-HISTORY',
+        'CONTROL',
+        'DELETE',
+        0
+    ),
     ('SHOPPINGHISTORY', 'CONTROL', 'POST', 0),
     ('SHOPPINGHISTORY', 'CONTROL', 'GET', 1),
     ('SHOPPINGHISTORY', 'CONTROL', 'PATCH', 0),
@@ -1799,7 +1756,12 @@ values
     ('SHOPPING-DEMAND-HISTORY', 'PREMIUM', 'POST', 0),
     ('SHOPPING-DEMAND-HISTORY', 'PREMIUM', 'GET', 0),
     ('SHOPPING-DEMAND-HISTORY', 'PREMIUM', 'PATCH', 0),
-    ('SHOPPING-DEMAND-HISTORY', 'PREMIUM', 'DELETE', 0),
+    (
+        'SHOPPING-DEMAND-HISTORY',
+        'PREMIUM',
+        'DELETE',
+        0
+    ),
     ('SHOPPINGHISTORY', 'PREMIUM', 'POST', 0),
     ('SHOPPINGHISTORY', 'PREMIUM', 'GET', 1),
     ('SHOPPINGHISTORY', 'PREMIUM', 'PATCH', 0),
@@ -1854,11 +1816,8 @@ values
     ('COMPANY', 'ABOGADO', 'POST', 1),
     ('COMPANY', 'ABOGADO', 'GET', 1),
     ('COMPANY', 'ABOGADO', 'PATCH', 1);
-
-insert into
-    role_permission
-values
-    ('COMPANY', 'ABOGADO', 'DELETE', 0),
+insert into role_permission
+values ('COMPANY', 'ABOGADO', 'DELETE', 0),
     ('COUNTRY', 'ABOGADO', 'POST', 0),
     ('COUNTRY', 'ABOGADO', 'GET', 1),
     ('COUNTRY', 'ABOGADO', 'PATCH', 0),
@@ -1962,7 +1921,12 @@ values
     ('SHOPPING-DEMAND-HISTORY', 'ABOGADO', 'POST', 0),
     ('SHOPPING-DEMAND-HISTORY', 'ABOGADO', 'GET', 1),
     ('SHOPPING-DEMAND-HISTORY', 'ABOGADO', 'PATCH', 0),
-    ('SHOPPING-DEMAND-HISTORY', 'ABOGADO', 'DELETE', 0),
+    (
+        'SHOPPING-DEMAND-HISTORY',
+        'ABOGADO',
+        'DELETE',
+        0
+    ),
     ('SHOPPINGHISTORY', 'ABOGADO', 'POST', 0),
     ('SHOPPINGHISTORY', 'ABOGADO', 'GET', 1),
     ('SHOPPINGHISTORY', 'ABOGADO', 'PATCH', 0),
@@ -2118,10 +2082,25 @@ values
     ('SELECTION', 'OPERATIVO', 'GET', 1),
     ('SELECTION', 'OPERATIVO', 'PATCH', 1),
     ('SELECTION', 'OPERATIVO', 'DELETE', 1),
-    ('SHOPPING-DEMAND-HISTORY', 'OPERATIVO', 'POST', 0),
+    (
+        'SHOPPING-DEMAND-HISTORY',
+        'OPERATIVO',
+        'POST',
+        0
+    ),
     ('SHOPPING-DEMAND-HISTORY', 'OPERATIVO', 'GET', 1),
-    ('SHOPPING-DEMAND-HISTORY', 'OPERATIVO', 'PATCH', 0),
-    ('SHOPPING-DEMAND-HISTORY', 'OPERATIVO', 'DELETE', 0),
+    (
+        'SHOPPING-DEMAND-HISTORY',
+        'OPERATIVO',
+        'PATCH',
+        0
+    ),
+    (
+        'SHOPPING-DEMAND-HISTORY',
+        'OPERATIVO',
+        'DELETE',
+        0
+    ),
     ('SHOPPINGHISTORY', 'OPERATIVO', 'POST', 0),
     ('SHOPPINGHISTORY', 'OPERATIVO', 'GET', 1),
     ('SHOPPINGHISTORY', 'OPERATIVO', 'PATCH', 0),
@@ -2240,11 +2219,21 @@ values
     ('POLITICSACCEPTED', 'ADMINISTRATIVO', 'POST', 1),
     ('POLITICSACCEPTED', 'ADMINISTRATIVO', 'GET', 1),
     ('POLITICSACCEPTED', 'ADMINISTRATIVO', 'PATCH', 1),
-    ('POLITICSACCEPTED', 'ADMINISTRATIVO', 'DELETE', 1),
+    (
+        'POLITICSACCEPTED',
+        'ADMINISTRATIVO',
+        'DELETE',
+        1
+    ),
     ('REDEEMED-HISTORY', 'ADMINISTRATIVO', 'POST', 1),
     ('REDEEMED-HISTORY', 'ADMINISTRATIVO', 'GET', 1),
     ('REDEEMED-HISTORY', 'ADMINISTRATIVO', 'PATCH', 1),
-    ('REDEEMED-HISTORY', 'ADMINISTRATIVO', 'DELETE', 1),
+    (
+        'REDEEMED-HISTORY',
+        'ADMINISTRATIVO',
+        'DELETE',
+        1
+    ),
     ('REQUEST', 'ADMINISTRATIVO', 'POST', 1),
     ('REQUEST', 'ADMINISTRATIVO', 'GET', 1),
     ('REQUEST', 'ADMINISTRATIVO', 'PATCH', 1),
@@ -2256,7 +2245,12 @@ values
     ('REQUIREMENT-BODY', 'ADMINISTRATIVO', 'POST', 1),
     ('REQUIREMENT-BODY', 'ADMINISTRATIVO', 'GET', 1),
     ('REQUIREMENT-BODY', 'ADMINISTRATIVO', 'PATCH', 1),
-    ('REQUIREMENT-BODY', 'ADMINISTRATIVO', 'DELETE', 1),
+    (
+        'REQUIREMENT-BODY',
+        'ADMINISTRATIVO',
+        'DELETE',
+        1
+    ),
     ('REWARD', 'ADMINISTRATIVO', 'POST', 1),
     ('REWARD', 'ADMINISTRATIVO', 'GET', 1),
     ('REWARD', 'ADMINISTRATIVO', 'PATCH', 1),
@@ -2377,11 +2371,8 @@ values
     ('ELEMENT', 'BUYER', 'PATCH', 0),
     ('ELEMENT', 'BUYER', 'DELETE', 0),
     ('EMPLOYEE', 'BUYER', 'POST', 0);
-
-insert into
-    role_permission
-values
-    ('EMPLOYEE', 'BUYER', 'GET', 0),
+insert into role_permission
+values ('EMPLOYEE', 'BUYER', 'GET', 0),
     ('EMPLOYEE', 'BUYER', 'PATCH', 0),
     ('EMPLOYEE', 'BUYER', 'DELETE', 0),
     ('ERROR-LOG', 'BUYER', 'POST', 0),
@@ -2635,10 +2626,25 @@ values
     ('SELECTION', 'CATALOGUE', 'GET', 1),
     ('SELECTION', 'CATALOGUE', 'PATCH', 0),
     ('SELECTION', 'CATALOGUE', 'DELETE', 0),
-    ('SHOPPING-DEMAND-HISTORY', 'CATALOGUE', 'POST', 0),
+    (
+        'SHOPPING-DEMAND-HISTORY',
+        'CATALOGUE',
+        'POST',
+        0
+    ),
     ('SHOPPING-DEMAND-HISTORY', 'CATALOGUE', 'GET', 0),
-    ('SHOPPING-DEMAND-HISTORY', 'CATALOGUE', 'PATCH', 0),
-    ('SHOPPING-DEMAND-HISTORY', 'CATALOGUE', 'DELETE', 0),
+    (
+        'SHOPPING-DEMAND-HISTORY',
+        'CATALOGUE',
+        'PATCH',
+        0
+    ),
+    (
+        'SHOPPING-DEMAND-HISTORY',
+        'CATALOGUE',
+        'DELETE',
+        0
+    ),
     ('SHOPPINGHISTORY', 'CATALOGUE', 'POST', 0),
     ('SHOPPINGHISTORY', 'CATALOGUE', 'GET', 0),
     ('SHOPPINGHISTORY', 'CATALOGUE', 'PATCH', 0),
@@ -2691,10 +2697,25 @@ values
     ('PAYMENTS-RECEIPTS', 'CONTROL', 'GET', 1),
     ('PAYMENTS-RECEIPTS', 'BUYER', 'POST', 1),
     ('PAYMENTS-RECEIPTS', 'BUYER', 'GET', 1),
-    ('EMPLOYEECREDENTIAL', 'ADMINISTRATIVO', 'POST', 1),
+    (
+        'EMPLOYEECREDENTIAL',
+        'ADMINISTRATIVO',
+        'POST',
+        1
+    ),
     ('EMPLOYEECREDENTIAL', 'ADMINISTRATIVO', 'GET', 1),
-    ('EMPLOYEECREDENTIAL', 'ADMINISTRATIVO', 'PATCH', 1),
-    ('EMPLOYEECREDENTIAL', 'ADMINISTRATIVO', 'DELETE', 1),
+    (
+        'EMPLOYEECREDENTIAL',
+        'ADMINISTRATIVO',
+        'PATCH',
+        1
+    ),
+    (
+        'EMPLOYEECREDENTIAL',
+        'ADMINISTRATIVO',
+        'DELETE',
+        1
+    ),
     ('PAYOUT', 'PLUS', 'GET', 1),
     ('PAYOUT', 'PREMIUM', 'GET', 1),
     ('PACKAGE-CURRENCY', 'PREMIUM', 'GET', 1),
@@ -2706,11 +2727,36 @@ values
     ('PACKAGE', 'ADMINISTRATIVO', 'POST', 1),
     ('PACKAGE', 'ADMINISTRATIVO', 'PATCH', 1),
     ('PAYMENTS-RECEIPTS-WOMPI', 'OPERATIVO', 'GET', 1),
-    ('PAYMENTS-RECEIPTS-WOMPI', 'OPERATIVO', 'POST', 1),
-    ('PAYMENTS-RECEIPTS-WOMPI', 'OPERATIVO', 'PATCH', 1),
-    ('PAYMENTS-RECEIPTS-WOMPI', 'ADMINISTRATIVO', 'GET', 1),
-    ('PAYMENTS-RECEIPTS-WOMPI', 'ADMINISTRATIVO', 'POST', 1),
-    ('PAYMENTS-RECEIPTS-WOMPI', 'ADMINISTRATIVO', 'PATCH', 1),
+    (
+        'PAYMENTS-RECEIPTS-WOMPI',
+        'OPERATIVO',
+        'POST',
+        1
+    ),
+    (
+        'PAYMENTS-RECEIPTS-WOMPI',
+        'OPERATIVO',
+        'PATCH',
+        1
+    ),
+    (
+        'PAYMENTS-RECEIPTS-WOMPI',
+        'ADMINISTRATIVO',
+        'GET',
+        1
+    ),
+    (
+        'PAYMENTS-RECEIPTS-WOMPI',
+        'ADMINISTRATIVO',
+        'POST',
+        1
+    ),
+    (
+        'PAYMENTS-RECEIPTS-WOMPI',
+        'ADMINISTRATIVO',
+        'PATCH',
+        1
+    ),
     ('PAYMENTS-RECEIPTS-WOMPI', 'CONTROL', 'GET', 1),
     ('PAYMENTS-RECEIPTS-WOMPI', 'CONTROL', 'POST', 1),
     ('PAYMENTS-RECEIPTS-WOMPI', 'PLUS', 'GET', 1),
@@ -2718,32 +2764,84 @@ values
     ('PAYMENTS-RECEIPTS-WOMPI', 'PREMIUM', 'GET', 1),
     ('PAYMENTS-RECEIPTS-WOMPI', 'PREMIUM', 'POST', 1),
     ('PAYMENTS-RECEIPTS-WOMPI', 'CATALOGUE', 'GET', 1),
-    ('PAYMENTS-RECEIPTS-WOMPI', 'CATALOGUE', 'POST', 1),
-    ('PAYMENTS-RECEIPTS-WOMPI', 'CATALOGUE', 'PATCH', 1),    
+    (
+        'PAYMENTS-RECEIPTS-WOMPI',
+        'CATALOGUE',
+        'POST',
+        1
+    ),
+    (
+        'PAYMENTS-RECEIPTS-WOMPI',
+        'CATALOGUE',
+        'PATCH',
+        1
+    ),
     ('PAYMENTS-RECEIPTS-WOMPI', 'BUYER', 'GET', 1),
     ('PAYMENTS-RECEIPTS-WOMPI', 'BUYER', 'POST', 1),
     ('PAYMENTS-RECEIPTS-LOOPAY', 'BUYER', 'GET', 1),
     ('PAYMENTS-RECEIPTS-LOOPAY', 'BUYER', 'POST', 1),
-    ('PAYMENTS-RECEIPTS-LOOPAY', 'OPERATIVO', 'GET', 1),
-    ('PAYMENTS-RECEIPTS-LOOPAY', 'OPERATIVO', 'POST', 1),
-    ('PAYMENTS-RECEIPTS-LOOPAY', 'OPERATIVO', 'PATCH', 1),
-    ('PAYMENTS-RECEIPTS-LOOPAY', 'ADMINISTRATIVO', 'GET', 1),
-    ('PAYMENTS-RECEIPTS-LOOPAY', 'ADMINISTRATIVO', 'POST', 1),
-    ('PAYMENTS-RECEIPTS-LOOPAY', 'ADMINISTRATIVO', 'PATCH', 1),
+    (
+        'PAYMENTS-RECEIPTS-LOOPAY',
+        'OPERATIVO',
+        'GET',
+        1
+    ),
+    (
+        'PAYMENTS-RECEIPTS-LOOPAY',
+        'OPERATIVO',
+        'POST',
+        1
+    ),
+    (
+        'PAYMENTS-RECEIPTS-LOOPAY',
+        'OPERATIVO',
+        'PATCH',
+        1
+    ),
+    (
+        'PAYMENTS-RECEIPTS-LOOPAY',
+        'ADMINISTRATIVO',
+        'GET',
+        1
+    ),
+    (
+        'PAYMENTS-RECEIPTS-LOOPAY',
+        'ADMINISTRATIVO',
+        'POST',
+        1
+    ),
+    (
+        'PAYMENTS-RECEIPTS-LOOPAY',
+        'ADMINISTRATIVO',
+        'PATCH',
+        1
+    ),
     ('PAYMENTS-RECEIPTS-LOOPAY', 'CONTROL', 'GET', 1),
     ('PAYMENTS-RECEIPTS-LOOPAY', 'CONTROL', 'POST', 1),
     ('PAYMENTS-RECEIPTS-LOOPAY', 'PLUS', 'GET', 1),
     ('PAYMENTS-RECEIPTS-LOOPAY', 'PLUS', 'POST', 1),
     ('PAYMENTS-RECEIPTS-LOOPAY', 'PREMIUM', 'GET', 1),
     ('PAYMENTS-RECEIPTS-LOOPAY', 'PREMIUM', 'POST', 1),
-    ('PAYMENTS-RECEIPTS-LOOPAY', 'CATALOGUE', 'GET', 1),
-    ('PAYMENTS-RECEIPTS-LOOPAY', 'CATALOGUE', 'POST', 1),
-    ('PAYMENTS-RECEIPTS-LOOPAY', 'CATALOGUE', 'PATCH', 1);
-
-INSERT INTO
-    [dbo].[politic] ([politicName])
-VALUES
-    ('GENERAL-USER'),
+    (
+        'PAYMENTS-RECEIPTS-LOOPAY',
+        'CATALOGUE',
+        'GET',
+        1
+    ),
+    (
+        'PAYMENTS-RECEIPTS-LOOPAY',
+        'CATALOGUE',
+        'POST',
+        1
+    ),
+    (
+        'PAYMENTS-RECEIPTS-LOOPAY',
+        'CATALOGUE',
+        'PATCH',
+        1
+    );
+INSERT INTO [dbo].[politic] ([politicName])
+VALUES ('GENERAL-USER'),
     ('GENERAL-BUYER'),
     ('PREMIUM-USER'),
     ('PLUS-USER'),
@@ -2757,26 +2855,83 @@ VALUES
     ('CONTROL-CONTRACT'),
     ('PLUS-CONTRACT'),
     ('PREMIUM-CONTRACT');
-
-INSERT INTO
-    [dbo].[politic_body] (
+INSERT INTO [dbo].[politic_body] (
         [politicText],
         [politicVersion],
         [politicState],
         [politicId],
         [politicTitle]
     )
-VALUES
-    ('politics/GENERAL-USER.pdf', '1.0', 1, 1, 'Términos y Condiciones generales.'),
-    ('politics/GENERAL-BUYER.pdf', '1.0', 1, 2, 'Términos y Condiciones generales.'),
-    ('politics/PREMIUM-USER.pdf', '1.0', 0, 3, 'Términos y Condiciones específicos.'),
-    ('politics/PLUS-USER.pdf', '1.0', 1, 4, 'Términos y Condiciones específicos.'),
-    ('politics/CONTROL-USER.pdf', '1.0', 1, 5, 'Términos y Condiciones específicos.'),
-    ('politics/DATA-USER.pdf', '1.0', 0, 6, 'Política de tratamiento de datos personales.'),
-    ('politics/PREMIUM-USER.pdf', '2.0', 1, 3, 'Términos y Condiciones específicos.'),
-    ('politics/DATA-CONTROL.pdf', '1.0', 1, 7, 'Autorización para el tratamiento de datos personales.'),
-    ('politics/DATA-PLUS.pdf', '1.0', 1, 8, 'Autorización para el tratamiento de datos personales.'),
-    ('politics/DATA-PREMIUM.pdf', '1.0', 1, 9, 'Autorización para el tratamiento de datos personales.'),
+VALUES (
+        'politics/GENERAL-USER.pdf',
+        '1.0',
+        1,
+        1,
+        'Términos y Condiciones generales.'
+    ),
+    (
+        'politics/GENERAL-BUYER.pdf',
+        '1.0',
+        1,
+        2,
+        'Términos y Condiciones generales.'
+    ),
+    (
+        'politics/PREMIUM-USER.pdf',
+        '1.0',
+        0,
+        3,
+        'Términos y Condiciones específicos.'
+    ),
+    (
+        'politics/PLUS-USER.pdf',
+        '1.0',
+        1,
+        4,
+        'Términos y Condiciones específicos.'
+    ),
+    (
+        'politics/CONTROL-USER.pdf',
+        '1.0',
+        1,
+        5,
+        'Términos y Condiciones específicos.'
+    ),
+    (
+        'politics/DATA-USER.pdf',
+        '1.0',
+        0,
+        6,
+        'Política de tratamiento de datos personales.'
+    ),
+    (
+        'politics/PREMIUM-USER.pdf',
+        '2.0',
+        1,
+        3,
+        'Términos y Condiciones específicos.'
+    ),
+    (
+        'politics/DATA-CONTROL.pdf',
+        '1.0',
+        1,
+        7,
+        'Autorización para el tratamiento de datos personales.'
+    ),
+    (
+        'politics/DATA-PLUS.pdf',
+        '1.0',
+        1,
+        8,
+        'Autorización para el tratamiento de datos personales.'
+    ),
+    (
+        'politics/DATA-PREMIUM.pdf',
+        '1.0',
+        1,
+        9,
+        'Autorización para el tratamiento de datos personales.'
+    ),
     (
         'politics/MOVISTAR-USER.pdf',
         '1.0',
@@ -2784,12 +2939,41 @@ VALUES
         10,
         'Términos y condiciones específicos MOVISTAR.'
     ),
-    ('politics/DATA-POLITICS.pdf', '1.0', 0, 11, 'Política de tratamiento de datos personales.'),
-    ('politics/DATA-POLITICS.pdf', '2.0', 1, 11, 'Política de tratamiento de datos personales.'),
-    ('politics/CONTROL-CONTRACT.pdf', '1.0', 1, 12, 'Contrato de mandato Data Control.'),
-    ('politics/PLUS-CONTRACT.pdf', '1.0', 1, 13, 'Contrato de mandato Data Más.'),
-    ('politics/PREMIUM-CONTRACT.pdf', '1.0', 1, 14, 'Contrato de mandato Data Premium.');
-
+    (
+        'politics/DATA-POLITICS.pdf',
+        '1.0',
+        0,
+        11,
+        'Política de tratamiento de datos personales.'
+    ),
+    (
+        'politics/DATA-POLITICS.pdf',
+        '2.0',
+        1,
+        11,
+        'Política de tratamiento de datos personales.'
+    ),
+    (
+        'politics/CONTROL-CONTRACT.pdf',
+        '1.0',
+        1,
+        12,
+        'Contrato de mandato Data Control.'
+    ),
+    (
+        'politics/PLUS-CONTRACT.pdf',
+        '1.0',
+        1,
+        13,
+        'Contrato de mandato Data Más.'
+    ),
+    (
+        'politics/PREMIUM-CONTRACT.pdf',
+        '1.0',
+        1,
+        14,
+        'Contrato de mandato Data Premium.'
+    );
 /* INSERT INTO [dbo].[sponsor_code] ([sponsorCode], [documentNumber], [companyId])
  VALUES
  ('MOV0123456', '1234567890', '0e76433e-f36b-1410-81c2-009e18c9ad57'); */
@@ -2831,8 +3015,7 @@ VALUES
  (1001, 5000, 4100, 1, 2),
  (5001, 10000, 5100, 1, 2),
  (10001, 1000000, 6100, 1, 2); */
-INSERT INTO
-    dbo.company(
+INSERT INTO dbo.company(
         companyId,
         companyBussinesName,
         companyComertialName,
@@ -2844,8 +3027,7 @@ INSERT INTO
         directRemitent,
         companyUsed
     )
-VALUES
-    (
+VALUES (
         '00000000-0000-0000-0000-000000000000',
         'Ofuscated',
         'Ofuscated',
@@ -2857,22 +3039,72 @@ VALUES
         0,
         0
     )
-insert into
-    package_currency(
+insert into package_currency(
         packageCurrencyName,
         packageCurrencyValue,
         packageCurrencyActive,
         packageQuantity,
         packageVersion
     )
-VALUES
-    ('BASIC', 0, 1, 2, '1.0'),
+VALUES ('BASIC', 0, 1, 2, '1.0'),
     ('STANDARD', 20000, 1, 1, '1.0'),
     ('CONTROL3', 40000, 1, 3, '1.0'),
     ('CONTROL5', 60000, 1, 5, '1.0'),
     ('CONTROLFULL', 0, 1, 9999, '1.0');
-insert into category_company(categoryCompanyName, categoryCompanyUsed) VALUES
-('Entidad bancaria', 1),
-('Servicios públicos', 1),
-('Uncategorized', 1),
-('Sin Canal', 1);
+insert into category_company(categoryCompanyName, categoryCompanyUsed)
+VALUES ('Entidad bancaria', 1),
+    ('Servicios públicos', 1),
+    ('Uncategorized', 1),
+    ('Sin Canal', 1);
+INSERT INTO [dbo].[person] (
+        [personId],
+        [personName],
+        [personLastName],
+        [personIdentNum],
+        [personBirthDt],
+        [personPhone],
+        [personActive],
+        [identDocId],
+        [genderId],
+        [personCity],
+        [expeditionCity]
+    )
+VALUES (
+        '123e4567-e89b-12d3-a456-426614174000',
+        'Administrativo',
+        'Admin',
+        '1000000001',
+        '1924-11-02',
+        '3000000001',
+        1,
+        1,
+        1,
+        7,
+        32
+    );
+INSERT INTO [dbo].[employee] (
+        [employeeId],
+        [personId],
+        [roleId]
+    )
+VALUES(
+        '987f6543-e21b-45d6-a456-556642440000',
+        '123e4567-e89b-12d3-a456-426614174000',
+        6
+    );
+INSERT INTO [dbo].[employee_credentials] (
+        [employeeCredentialId],
+        [employeeCredentialEmail],
+        [employeeCredentialPass],
+        [employeeCredentialEnabled],
+        [credentialUsed],
+        [employeeId]
+    )
+VALUES(
+        '456e1234-f89a-12d3-a456-426614174001',
+        'administrativoadmin@correo.com',
+        '$2b$10$g3Lyu.QfC89S52.dFx33qeRDLNKpdQHLrExtzNG4ZN3xiXPweGbPC',
+        1,
+        1,
+        '987f6543-e21b-45d6-a456-556642440000'
+    );

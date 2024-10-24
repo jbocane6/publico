@@ -1,5 +1,4 @@
-INSERT INTO
-      [dbo].[person] (
+INSERT INTO [dbo].[person] (
             [personId],
             [personName],
             [personLastName],
@@ -12,8 +11,7 @@ INSERT INTO
             [personCity],
             [expeditionCity]
       )
-VALUES
-      (
+VALUES (
             'ca938bdd-63cf-49ba-a832-9982e1a973b8',
             'user1',
             'prueba',
@@ -1313,9 +1311,7 @@ VALUES
             12,
             22
       );
-
-INSERT INTO
-      [dbo].[users] (
+INSERT INTO [dbo].[users] (
             [userId],
             [userDocumentPath],
             [planId],
@@ -1324,8 +1320,7 @@ INSERT INTO
             [userSignedDocument],
             [validateDocument]
       )
-VALUES
-      (
+VALUES (
             '6fda8768-f17a-42af-bef9-3f1ce4b1dfdf',
             'document.png',
             1,
@@ -2225,11 +2220,484 @@ VALUES
             1,
             1
       );
-
-INSERT INTO
-      [dbo].[white_list] ([userId], [companyId])
-VALUES
+INSERT INTO [dbo].[credential] (
+            [userId],
+            [credentialEmail],
+            [credentialPass],
+            [credentialEnabled],
+            [credentialVerified]
+      )
+VALUES (
+            '38469b66-d593-45cc-87ae-358b57c32bde',
+            'usuario@correo.com',
+            'Pass123*',
+            1,
+            1
+      ),
       (
+            '241ff158-2225-49aa-af9e-23ffb3d822b1',
+            'usuario1@correo.com',
+            'Pass123*',
+            1,
+            1
+      ),
+      (
+            '17dbef75-a269-4179-9bea-84f1d5f9190d',
+            'usuario2@correo.com',
+            'Pass123*',
+            1,
+            1
+      ),
+      (
+            '4e45d812-98f0-4d7c-9f4b-8d6dcb546627',
+            'usuario3@correo.com',
+            'Pass123*',
+            1,
+            1
+      ),
+      (
+            '81432fab-71a9-4217-a9ce-7417359fa94e',
+            'usuario4@correo.com',
+            'Pass123*',
+            1,
+            1
+      ),
+      (
+            'b9ff2383-cad7-4bcf-8651-885e191e8d5d',
+            'usuario5@correo.com',
+            'Pass123*',
+            1,
+            1
+      ),
+      (
+            '809fc779-bf72-438d-8f60-076933fea808',
+            'usuario6@correo.com',
+            'Pass123*',
+            1,
+            1
+      ),
+      (
+            '734f4c09-4347-47ae-8048-10be89466962',
+            'usuari7o@correo.com',
+            'Pass123*',
+            1,
+            1
+      ),
+      (
+            '1a17cc1f-88b8-4c22-a7d5-ffb36b779418',
+            'usua8rio@correo.com',
+            'Pass123*',
+            1,
+            1
+      ),
+      (
+            'e126b930-9c14-4975-af89-b48ab8278441',
+            'usuar9io@correo.com',
+            'Pass123*',
+            1,
+            1
+      ),
+      (
+            '96c92bf1-453a-45e6-a366-087ca190be7c',
+            'usua10rio@correo.com',
+            'Pass123*',
+            1,
+            1
+      ),
+      (
+            'ccb7181d-fdad-4efa-b8cc-8ddc4259db76',
+            'usua11rio@correo.com',
+            'Pass123*',
+            1,
+            1
+      ),
+      (
+            '4ee3ed21-7059-4f36-9530-1a2f3ec52ba8',
+            'usua12rio@correo.com',
+            'Pass123*',
+            1,
+            1
+      ),
+      (
+            'b3c2b4e6-94f7-41f3-bbf6-cfb0d56f51ec',
+            'usua13rio@correo.com',
+            'Pass123*',
+            1,
+            1
+      ),
+      (
+            'baad2214-7c7f-4494-9f19-b1d8e15d8553',
+            'usua14rio@correo.com',
+            'Pass123*',
+            1,
+            1
+      ),
+      (
+            '2a68d097-34be-4843-9af0-672623d98a91',
+            'usua15rio@correo.com',
+            'Pass123*',
+            1,
+            1
+      ),
+      (
+            '51ec5432-3ee8-4269-ab2c-43140a627aef',
+            'usua16rio@correo.com',
+            'Pass123*',
+            1,
+            1
+      ),
+      (
+            'e504fe6a-b5e3-4fb9-8fd3-33fabf49c3f5',
+            'usua17rio@correo.com',
+            'Pass123*',
+            1,
+            1
+      ),
+      (
+            'c84b1964-934b-43e0-a928-f7a998b0f85f',
+            'usua18rio@correo.com',
+            'Pass123*',
+            1,
+            1
+      ),
+      (
+            '2a4d3431-c2dc-459d-b34c-4234004c87a2',
+            'usua19rio@correo.com',
+            'Pass123*',
+            1,
+            1
+      ),
+      (
+            '6ae9d351-3ebc-4bc0-9e4b-4836995fe9b8',
+            'usua20rio@correo.com',
+            'Pass123*',
+            1,
+            1
+      ),
+      (
+            'bf71f84a-bc42-4c47-bd22-3bd97c356cf5',
+            'usua21rio@correo.com',
+            'Pass123*',
+            1,
+            1
+      ),
+      (
+            '0826be78-b185-4130-a7ff-01f65dae45b4',
+            'usua22rio@correo.com',
+            'Pass123*',
+            1,
+            1
+      ),
+      (
+            '6722100b-67aa-4412-a53a-3699ca5351a4',
+            'usua23rio@correo.com',
+            'Pass123*',
+            1,
+            1
+      ),
+      (
+            '821dbcf7-85c7-4e88-802e-1085eb4396c9',
+            'usua24rio@correo.com',
+            'Pass123*',
+            1,
+            1
+      ),
+      (
+            '97c98390-a748-4073-a9ef-ac5e5387289b',
+            'usua25rio@correo.com',
+            'Pass123*',
+            1,
+            1
+      ),
+      (
+            'e89a0dd8-8714-48c0-9922-5c29265ae3ef',
+            'usua26rio@correo.com',
+            'Pass123*',
+            1,
+            1
+      ),
+      (
+            'ffd63ef0-70eb-4826-9138-fd38c8280dd6',
+            'usua27rio@correo.com',
+            'Pass123*',
+            1,
+            1
+      ),
+      (
+            '82b22e87-7879-4756-b842-03e1f3a4c6c5',
+            'usua28rio@correo.com',
+            'Pass123*',
+            1,
+            1
+      ),
+      (
+            '7e05872b-e7fb-48aa-8d64-95563ce8e163',
+            'usua29rio@correo.com',
+            'Pass123*',
+            1,
+            1
+      ),
+      (
+            '51bd4187-5afd-4516-a09d-7300062d047f',
+            'usua30rio@correo.com',
+            'Pass123*',
+            1,
+            1
+      ),
+      (
+            'fbf8b150-bebd-4ea5-bfca-0c99f1df121c',
+            'usua31rio@correo.com',
+            'Pass123*',
+            1,
+            1
+      ),
+      (
+            'cabdb7bd-6d2e-4132-8e94-cb9061c38e2e',
+            'usua32rio@correo.com',
+            'Pass123*',
+            1,
+            1
+      ),
+      (
+            'a73e1118-a45e-4066-8dab-77f6e98d52da',
+            'usua33rio@correo.com',
+            'Pass123*',
+            1,
+            1
+      ),
+      (
+            '3ecb5533-1357-4371-a608-ddcab398392d',
+            'usuar34io@correo.com',
+            'Pass123*',
+            1,
+            1
+      ),
+      (
+            '53fa60b0-6ca5-4acb-bb01-aa4f5f18ebb1',
+            'usuar35io@correo.com',
+            'Pass123*',
+            1,
+            1
+      ),
+      (
+            '8f190b4d-436d-43ff-88dd-c9d5e14cbc2b',
+            'usuar36io@correo.com',
+            'Pass123*',
+            1,
+            1
+      ),
+      (
+            '4206888e-1967-4e38-a2f5-205a2ad551ad',
+            'usuar37io@correo.com',
+            'Pass123*',
+            1,
+            1
+      ),
+      (
+            'ba44c96a-773f-4adb-92ac-db2f50d65033',
+            'usuar38io@correo.com',
+            'Pass123*',
+            1,
+            1
+      ),
+      (
+            'e1ee7e94-39c8-456c-90ee-acf80784146c',
+            'usuar39io@correo.com',
+            'Pass123*',
+            1,
+            1
+      ),
+      (
+            '8cb329e3-a74b-4036-a31a-69d43798eb35',
+            'usuar40io@correo.com',
+            'Pass123*',
+            1,
+            1
+      ),
+      (
+            '07ce7439-dbe2-4e38-8189-e01256ed6c1d',
+            'usuar41io@correo.com',
+            'Pass123*',
+            1,
+            1
+      ),
+      (
+            '09ad224f-33b5-4acc-a475-8d76f5736ac1',
+            'usuar42io@correo.com',
+            'Pass123*',
+            1,
+            1
+      ),
+      (
+            '97d80f5a-54a4-414d-ba52-003482ffad6d',
+            'usuar43io@correo.com',
+            'Pass123*',
+            1,
+            1
+      ),
+      (
+            '383e8cf4-75bd-4d85-86fb-33e80d6259bf',
+            'usuar44io@correo.com',
+            'Pass123*',
+            1,
+            1
+      ),
+      (
+            '170033df-b112-4c2d-9286-585f4bd2f0d9',
+            'usuar45io@correo.com',
+            'Pass123*',
+            1,
+            1
+      ),
+      (
+            'f6043658-83fc-4bd0-a94f-63d3ec28a473',
+            'usuar46io@correo.com',
+            'Pass123*',
+            1,
+            1
+      ),
+      (
+            '796abdb1-ce44-48e5-a6a1-29aad34fda08',
+            'usuar47io@correo.com',
+            'Pass123*',
+            1,
+            1
+      ),
+      (
+            '9858e530-aa8d-444e-906a-ae0c76080c47',
+            'usuar48io@correo.com',
+            'Pass123*',
+            1,
+            1
+      ),
+      (
+            'd412808e-805a-46d9-994e-e0863aabed6d',
+            'usuar49io@correo.com',
+            'Pass123*',
+            1,
+            1
+      ),
+      (
+            '9ea28a91-ebd9-4cb0-b556-6114859e6adf',
+            'usuar50io@correo.com',
+            'Pass123*',
+            1,
+            1
+      ),
+      (
+            '86cf71a7-2ed0-4461-8b79-8f01d538ad86',
+            'usuar51io@correo.com',
+            'Pass123*',
+            1,
+            1
+      ),
+      (
+            '475bc1d8-8ead-4341-87df-a4254f6c7cc7',
+            'usuar52io@correo.com',
+            'Pass123*',
+            1,
+            1
+      ),
+      (
+            'cdba76db-fb4f-4949-8e6a-dcd732f60166',
+            'usuar53io@correo.com',
+            'Pass123*',
+            1,
+            1
+      ),
+      (
+            'ce9e7c12-50ca-4fca-922d-3a4051394407',
+            'usuar54io@correo.com',
+            'Pass123*',
+            1,
+            1
+      ),
+      (
+            '5e6117dd-2af7-4cf3-a403-379c589906b1',
+            'usuar55io@correo.com',
+            'Pass123*',
+            1,
+            1
+      ),
+      (
+            'c83a2f26-e99e-4d34-9321-ee6c9eee9a24',
+            'usuar56io@correo.com',
+            'Pass123*',
+            1,
+            1
+      ),
+      (
+            '69f3cb3c-b5b6-4df5-ad73-c47e21e107b9',
+            'usuar57io@correo.com',
+            'Pass123*',
+            1,
+            1
+      ),
+      (
+            'a0beaf0c-3c2b-49d5-8719-5a32cfab3263',
+            'usuario58@correo.com',
+            'Pass123*',
+            1,
+            1
+      ),
+      (
+            '9b040210-922a-42a6-9c74-c3db0bf95375',
+            'usu59ario@correo.com',
+            'Pass123*',
+            1,
+            1
+      ),
+      (
+            '69f6c67c-2ac7-44f6-9441-4c386c9d142f',
+            'usu60ario@correo.com',
+            'Pass123*',
+            1,
+            1
+      ),
+      (
+            'ebcc554e-ac71-4e42-ab86-be37a8cd606b',
+            'usu61ario@correo.com',
+            'Pass123*',
+            1,
+            1
+      ),
+      (
+            '68cd23f5-607e-4cbc-bb96-9b66d319959e',
+            'usu62ario@correo.com',
+            'Pass123*',
+            1,
+            1
+      ),
+      (
+            'c70e0f4a-103b-40c2-bfcc-a87d53ab1be9',
+            'usu63ario@correo.com',
+            'Pass123*',
+            1,
+            1
+      ),
+      (
+            '12458b60-4ba1-4921-9a43-4b2ed90c7420',
+            'usu64ario@correo.com',
+            'Pass123*',
+            1,
+            1
+      ),
+      (
+            '1ee641dc-8df8-457e-8366-ce5bf2d9e5e6',
+            'usu65ario@correo.com',
+            'Pass123*',
+            1,
+            1
+      ),
+      (
+            'acc021fa-cf21-491d-91af-9bea064a4399',
+            'usu66ario@correo.com',
+            'Pass123*',
+            1,
+            1
+      );
+INSERT INTO [dbo].[white_list] ([userId], [companyId])
+VALUES (
             '38469b66-d593-45cc-87ae-358b57c32bde',
             'ea38bbdc-018b-ef11-acf8-0ed426d46691'
       ),
@@ -2497,11 +2965,8 @@ VALUES
             'acc021fa-cf21-491d-91af-9bea064a4399',
             'ea38bbdc-018b-ef11-acf8-0ed426d46691'
       );
-
-INSERT INTO
-      [dbo].[selection] ([userId], [element])
-VALUES
-      ('241ff158-2225-49aa-af9e-23ffb3d822b1', '139'),
+INSERT INTO [dbo].[selection] ([userId], [element])
+VALUES ('241ff158-2225-49aa-af9e-23ffb3d822b1', '139'),
       ('241ff158-2225-49aa-af9e-23ffb3d822b1', '117'),
       ('241ff158-2225-49aa-af9e-23ffb3d822b1', '487'),
       ('241ff158-2225-49aa-af9e-23ffb3d822b1', '215'),
@@ -2633,9 +3098,7 @@ VALUES
       ('1ee641dc-8df8-457e-8366-ce5bf2d9e5e6', '297'),
       ('1ee641dc-8df8-457e-8366-ce5bf2d9e5e6', '465'),
       ('1ee641dc-8df8-457e-8366-ce5bf2d9e5e6', '232');
-
-INSERT INTO
-      [dbo].[shopping_history] (
+INSERT INTO [dbo].[shopping_history] (
             [shoppingHistoryId],
             [shoppingDate],
             [expeditionDate],
@@ -2645,8 +3108,7 @@ INSERT INTO
             [BuyerId],
             [databaseId]
       )
-VALUES
-      (
+VALUES (
             '2f5c0a36-8f6b-4a2d-a7b2-9d75c903a4e1',
             '2023-10-25',
             '2024-01-25',
@@ -3176,15 +3638,12 @@ VALUES
             '321088ce-3276-4b31-87d5-dd3770a29a37',
             1
       );
-
-INSERT INTO
-      [dbo].[users_buyed] (
+INSERT INTO [dbo].[users_buyed] (
             [usersBuyedId],
             [shoppingHistoryId],
             [whiteListId]
       )
-VALUES
-      (
+VALUES (
             '1932433e-f36b-1410-87a6-0065356853cd',
             '8d7a21c1-9b4c-4912-bb6f-256d3b73d92e',
             '8430433e-f36b-1410-87a6-0065356853cd'
@@ -3519,17 +3978,14 @@ VALUES
             '2f5c0a36-8f6b-4a2d-a7b2-9d75c903a4e1',
             'd331433e-f36b-1410-87a6-0065356853cd'
       );
-
-INSERT INTO
-      [dbo].[reward] (
+INSERT INTO [dbo].[reward] (
             [rewardId],
             [redeemedCode],
             [usersBuyed],
             [rewardCurrency],
             [redeemed]
       )
-VALUES
-      (
+VALUES (
             'ec32433e-f36b-1410-87a6-0065356853cd',
             'AKDBV1056',
             '1932433e-f36b-1410-87a6-0065356853cd',

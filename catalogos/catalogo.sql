@@ -2716,6 +2716,12 @@ values ('EMPLOYEE', 'BUYER', 'GET', 0),
         'DELETE',
         1
     ),
+    (
+        'EMPLOYEECREDENTIAL',
+        'OPERATIVO',
+        'GET',
+        1
+    ),
     ('PAYOUT', 'PLUS', 'GET', 1),
     ('PAYOUT', 'PREMIUM', 'GET', 1),
     ('PACKAGE-CURRENCY', 'PREMIUM', 'GET', 1),

@@ -1,8 +1,14 @@
 USE tudata;
-INSERT INTO dbo.country ("countryName")
-VALUES ('Colombia');
-INSERT INTO dbo.state ("stateName", "CountryId")
-VALUES ('Amazonas', 1),
+
+INSERT INTO
+    dbo.country ("countryName")
+VALUES
+    ('Colombia');
+
+INSERT INTO
+    dbo.state ("stateName", "CountryId")
+VALUES
+    ('Amazonas', 1),
     ('Antioquia', 1),
     ('Arauca', 1),
     ('Atlántico', 1),
@@ -35,8 +41,11 @@ VALUES ('Amazonas', 1),
     ('Valle del Cauca', 1),
     ('Vaupés', 1),
     ('Vichada', 1);
-INSERT INTO dbo.city("cityName", "stateId")
-VALUES ('Leticia', 1),
+
+INSERT INTO
+    dbo.city("cityName", "stateId")
+VALUES
+    ('Leticia', 1),
     ('El Encanto', 1),
     ('La Chorrera', 1),
     ('La Pedrera', 1),
@@ -937,8 +946,11 @@ VALUES ('Leticia', 1),
     ('Balboa', 26),
     ('Dosquebradas', 26),
     ('Guática', 26);
-INSERT INTO dbo.city("cityName", "stateId")
-VALUES ('La Celia', 26),
+
+INSERT INTO
+    dbo.city("cityName", "stateId")
+VALUES
+    ('La Celia', 26),
     ('La Virginia', 26),
     ('Marsella', 26),
     ('Mistrató', 26),
@@ -1161,17 +1173,26 @@ VALUES ('La Celia', 26),
     ('La Primavera', 33),
     ('Santa Rosalía', 33),
     ('Cumaribo', 33);
-INSERT INTO dbo.gender("genderType")
-VALUES ('Masculino'),
+
+INSERT INTO
+    dbo.gender("genderType")
+VALUES
+    ('Masculino'),
     ('Femenino'),
     ('Otro'),
     ('No binario'),
     ('Transgénero'),
     ('Prefiero no decir');
-INSERT INTO dbo.ident_document("identDocName")
-VALUES ('Cédula de ciudadanía');
-INSERT INTO [tudata].[dbo].[plan]("planName", "planTopics", "iconpath")
-VALUES (
+
+INSERT INTO
+    dbo.ident_document("identDocName")
+VALUES
+    ('Cédula de ciudadanía');
+
+INSERT INTO
+    [tudata].[dbo].[plan]("planName", "planTopics", "iconpath")
+VALUES
+    (
         'Control',
         'Este plan te permitirá bloquear dos entidades empresariales sin ningún costo.',
         'plans/tudatacontrol.png'
@@ -1186,51 +1207,75 @@ VALUES (
         'Podrás bloquear y autorizar tantas entidades como quieras y tendrás la opción para adicionar tus intereses de forma personalizada.',
         'plans/tudatapremium.png'
     );
-INSERT INTO dbo.requirement("requirementName")
-VALUES ('Derecho de petición'),
+
+INSERT INTO
+    dbo.requirement("requirementName")
+VALUES
+    ('Derecho de petición'),
     ('Recurso de reposición'),
     ('Tutela Habeas Data'),
     ('Queja ante SIC'),
     ('Tutela por no respuesta'),
     ('Tutela por respuesta incompleta');
-INSERT INTO [dbo].[reward_currency] (
+
+INSERT INTO
+    [dbo].[reward_currency] (
         [rewardCurrencyValue],
         [rewardCurrencyActive],
         [planId]
     )
-VALUES (0, 1, 1),
+VALUES
+    (0, 1, 1),
     (500, 1, 2),
     (800, 1, 3);
-INSERT INTO [dbo].[reward_currency] (
+
+INSERT INTO
+    [dbo].[reward_currency] (
         [rewardCurrencyValue],
         [rewardCurrencyActive],
         [requirementId]
     )
-VALUES (400, 1, 4);
-INSERT INTO [dbo].[reward_currency] (
+VALUES
+    (400, 1, 4);
+
+INSERT INTO
+    [dbo].[reward_currency] (
         [rewardCurrencyValue],
         [rewardCurrencyActive],
         [sponsor]
     )
-VALUES (1000, 1, 1);
-INSERT INTO [dbo].[role]([roleName])
-VALUES ('CONTROL'),
+VALUES
+    (1000, 1, 1);
+
+INSERT INTO
+    [dbo].[role]([roleName])
+VALUES
+    ('CONTROL'),
     ('PLUS'),
     ('PREMIUM'),
     ('ABOGADO'),
     ('OPERATIVO'),
     ('ADMINISTRATIVO'),
     ('BUYER');
-INSERT INTO [dbo].[database_type] ([databaseType])
-VALUES ('Simple'),
+
+INSERT INTO
+    [dbo].[database_type] ([databaseType])
+VALUES
+    ('Simple'),
     ('Especializada');
-INSERT INTO [dbo].[status]([statusName])
-VALUES ('Pendiente'),
+
+INSERT INTO
+    [dbo].[status]([statusName])
+VALUES
+    ('Pendiente'),
     ('Finalizado'),
     ('Rechazado'),
     ('Revisión');
-INSERT INTO [dbo].[pqr] (pqrsName, pqrsText, pqrsIcon)
-VALUES (
+
+INSERT INTO
+    [dbo].[pqr] (pqrsName, pqrsText, pqrsIcon)
+VALUES
+    (
         'Petición',
         'Peticiones: *Selecciona esta opción si deseas solicitar a *tudata *cualquier información relacionada con la prestación del servicio (tales como información específica sobre cada plan ofrecido).',
         'pqrsIcons/peticiones.svg'
@@ -1266,6 +1311,7 @@ VALUES (
     ('Contacto no Autorizado', '', ''),
     ('Eliminar Cuenta', '', ''),
     ('Eliminar Datos', '', '');
+
 /* INSERT INTO
  dbo.company(
  companyId,
@@ -1306,8 +1352,10 @@ VALUES (
  dbo.element("elementName", "subCategoryId")
  VALUES
  ('Ahorro de emergencia', 1); */
-insert into role_permission
-values ('BUYER', 'PLUS', 'POST', 0),
+insert into
+    role_permission
+values
+    ('BUYER', 'PLUS', 'POST', 0),
     ('BUYER', 'PLUS', 'GET', 0),
     ('BUYER', 'PLUS', 'PATCH', 0),
     ('BUYER', 'PLUS', 'DELETE', 0),
@@ -1816,8 +1864,11 @@ values ('BUYER', 'PLUS', 'POST', 0),
     ('COMPANY', 'ABOGADO', 'POST', 1),
     ('COMPANY', 'ABOGADO', 'GET', 1),
     ('COMPANY', 'ABOGADO', 'PATCH', 1);
-insert into role_permission
-values ('COMPANY', 'ABOGADO', 'DELETE', 0),
+
+insert into
+    role_permission
+values
+    ('COMPANY', 'ABOGADO', 'DELETE', 0),
     ('COUNTRY', 'ABOGADO', 'POST', 0),
     ('COUNTRY', 'ABOGADO', 'GET', 1),
     ('COUNTRY', 'ABOGADO', 'PATCH', 0),
@@ -2371,8 +2422,11 @@ values ('COMPANY', 'ABOGADO', 'DELETE', 0),
     ('ELEMENT', 'BUYER', 'PATCH', 0),
     ('ELEMENT', 'BUYER', 'DELETE', 0),
     ('EMPLOYEE', 'BUYER', 'POST', 0);
-insert into role_permission
-values ('EMPLOYEE', 'BUYER', 'GET', 0),
+
+insert into
+    role_permission
+values
+    ('EMPLOYEE', 'BUYER', 'GET', 0),
     ('EMPLOYEE', 'BUYER', 'PATCH', 0),
     ('EMPLOYEE', 'BUYER', 'DELETE', 0),
     ('ERROR-LOG', 'BUYER', 'POST', 0),
@@ -2846,8 +2900,11 @@ values ('EMPLOYEE', 'BUYER', 'GET', 0),
         'PATCH',
         1
     );
-INSERT INTO [dbo].[politic] ([politicName])
-VALUES ('GENERAL-USER'),
+
+INSERT INTO
+    [dbo].[politic] ([politicName])
+VALUES
+    ('GENERAL-USER'),
     ('GENERAL-BUYER'),
     ('PREMIUM-USER'),
     ('PLUS-USER'),
@@ -2861,14 +2918,17 @@ VALUES ('GENERAL-USER'),
     ('CONTROL-CONTRACT'),
     ('PLUS-CONTRACT'),
     ('PREMIUM-CONTRACT');
-INSERT INTO [dbo].[politic_body] (
+
+INSERT INTO
+    [dbo].[politic_body] (
         [politicText],
         [politicVersion],
         [politicState],
         [politicId],
         [politicTitle]
     )
-VALUES (
+VALUES
+    (
         'politics/GENERAL-USER.pdf',
         '1.0',
         1,
@@ -2980,6 +3040,7 @@ VALUES (
         14,
         'Contrato de mandato Data Premium.'
     );
+
 /* INSERT INTO [dbo].[sponsor_code] ([sponsorCode], [documentNumber], [companyId])
  VALUES
  ('MOV0123456', '1234567890', '0e76433e-f36b-1410-81c2-009e18c9ad57'); */
@@ -3021,7 +3082,8 @@ VALUES (
  (1001, 5000, 4100, 1, 2),
  (5001, 10000, 5100, 1, 2),
  (10001, 1000000, 6100, 1, 2); */
-INSERT INTO dbo.company(
+INSERT INTO
+    dbo.company(
         companyId,
         companyBussinesName,
         companyComertialName,
@@ -3033,7 +3095,8 @@ INSERT INTO dbo.company(
         directRemitent,
         companyUsed
     )
-VALUES (
+VALUES
+    (
         '00000000-0000-0000-0000-000000000000',
         'Ofuscated',
         'Ofuscated',
@@ -3045,24 +3108,31 @@ VALUES (
         0,
         0
     )
-insert into package_currency(
+insert into
+    package_currency(
         packageCurrencyName,
         packageCurrencyValue,
         packageCurrencyActive,
         packageQuantity,
         packageVersion
     )
-VALUES ('BASIC', 0, 1, 2, '1.0'),
+VALUES
+    ('BASIC', 0, 1, 2, '1.0'),
     ('STANDARD', 20000, 1, 1, '1.0'),
     ('CONTROL3', 40000, 1, 3, '1.0'),
     ('CONTROL5', 60000, 1, 5, '1.0'),
     ('CONTROLFULL', 0, 1, 9999, '1.0');
-insert into category_company(categoryCompanyName, categoryCompanyUsed)
-VALUES ('Entidad bancaria', 1),
+
+insert into
+    category_company(categoryCompanyName, categoryCompanyUsed)
+VALUES
+    ('Entidad bancaria', 1),
     ('Servicios públicos', 1),
     ('Uncategorized', 1),
     ('Sin Canal', 1);
-INSERT INTO [dbo].[person] (
+
+INSERT INTO
+    [dbo].[person] (
         [personId],
         [personName],
         [personLastName],
@@ -3075,7 +3145,8 @@ INSERT INTO [dbo].[person] (
         [personCity],
         [expeditionCity]
     )
-VALUES (
+VALUES
+    (
         '123e4567-e89b-12d3-a456-426614174000',
         'Administrativo',
         'Admin',
@@ -3088,17 +3159,22 @@ VALUES (
         7,
         32
     );
-INSERT INTO [dbo].[employee] (
+
+INSERT INTO
+    [dbo].[employee] (
         [employeeId],
         [personId],
         [roleId]
     )
-VALUES(
+VALUES
+(
         '987f6543-e21b-45d6-a456-556642440000',
         '123e4567-e89b-12d3-a456-426614174000',
         6
     );
-INSERT INTO [dbo].[employee_credentials] (
+
+INSERT INTO
+    [dbo].[employee_credentials] (
         [employeeCredentialId],
         [employeeCredentialEmail],
         [employeeCredentialPass],
@@ -3106,11 +3182,44 @@ INSERT INTO [dbo].[employee_credentials] (
         [credentialUsed],
         [employeeId]
     )
-VALUES(
+VALUES
+(
         '456e1234-f89a-12d3-a456-426614174001',
         'administrativoadmin@correo.com',
         '$2b$10$g3Lyu.QfC89S52.dFx33qeRDLNKpdQHLrExtzNG4ZN3xiXPweGbPC',
         1,
         1,
         '987f6543-e21b-45d6-a456-556642440000'
+    );
+
+insert into
+    role_permission
+values
+    ('GLOBAL-STATUS-PROCESS', 'ABOGADO', 'GET', 0),
+    ('GLOBAL-STATUS-PROCESS', 'ABOGADO', 'POST', 0),
+    ('GLOBAL-STATUS-PROCESS', 'ABOGADO', 'PATCH', 1),
+    ('GLOBAL-STATUS-PROCESS', 'ABOGADO', 'DELETE', 0),
+    (
+        'GLOBAL-STATUS-PROCESS',
+        'ADMINISTRATIVO',
+        'GET',
+        0
+    ),
+    (
+        'GLOBAL-STATUS-PROCESS',
+        'ADMINISTRATIVO',
+        'POST',
+        0
+    ),
+    (
+        'GLOBAL-STATUS-PROCESS',
+        'ADMINISTRATIVO',
+        'PATCH',
+        1
+    ),
+    (
+        'GLOBAL-STATUS-PROCESS',
+        'ADMINISTRATIVO',
+        'DELETE',
+        0
     );

@@ -2899,7 +2899,11 @@ values
         'CATALOGUE',
         'PATCH',
         1
-    );
+    ),
+    ('SPONSORCODE', 'ADMINISTRATIVO', 'POST', 1),
+    ('SPONSORCODE', 'ADMINISTRATIVO', 'GET', 1),
+    ('SPONSORCODE', 'ADMINISTRATIVO', 'PATCH', 1),
+    ('SPONSORCODE', 'ADMINISTRATIVO', 'DELETE', 1);
 
 INSERT INTO
     [dbo].[politic] ([politicName])
@@ -2982,21 +2986,21 @@ VALUES
         '1.0',
         1,
         7,
-        'Autorización para el tratamiento de datos personales.'
+        'Tratamiento de mis datos personales.'
     ),
     (
         'politics/DATA-PLUS.pdf',
         '1.0',
         1,
         8,
-        'Autorización para el tratamiento de datos personales.'
+        'Tratamiento de mis datos personales.'
     ),
     (
         'politics/DATA-PREMIUM.pdf',
         '1.0',
         1,
         9,
-        'Autorización para el tratamiento de datos personales.'
+        'Tratamiento de mis datos personales.'
     ),
     (
         'politics/MOVISTAR-USER.pdf',
@@ -3167,7 +3171,7 @@ INSERT INTO
         [roleId]
     )
 VALUES
-(
+    (
         '987f6543-e21b-45d6-a456-556642440000',
         '123e4567-e89b-12d3-a456-426614174000',
         6
@@ -3183,7 +3187,7 @@ INSERT INTO
         [employeeId]
     )
 VALUES
-(
+    (
         '456e1234-f89a-12d3-a456-426614174001',
         'administrativoadmin@correo.com',
         '$2b$10$g3Lyu.QfC89S52.dFx33qeRDLNKpdQHLrExtzNG4ZN3xiXPweGbPC',

@@ -219,6 +219,7 @@ VALUES
     ('Arroyohondo', 6),
     ('Calamar', 6),
     ('Cantagallo', 6),
+    ('Cartagena', 6),
     ('Cicuco', 6),
     ('Córdoba', 6),
     ('Clemencia', 6),

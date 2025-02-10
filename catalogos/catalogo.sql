@@ -219,7 +219,6 @@ VALUES
     ('Arroyohondo', 6),
     ('Calamar', 6),
     ('Cantagallo', 6),
-    ('Cartagena', 6),
     ('Cicuco', 6),
     ('Córdoba', 6),
     ('Clemencia', 6),
@@ -1173,7 +1172,8 @@ VALUES
     ('Puerto Carreño', 33),
     ('La Primavera', 33),
     ('Santa Rosalía', 33),
-    ('Cumaribo', 33);
+    ('Cumaribo', 33),
+    ('Cartagena', 6);
 
 INSERT INTO
     dbo.gender("genderType")

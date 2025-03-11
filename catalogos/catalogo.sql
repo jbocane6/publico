@@ -2906,6 +2906,18 @@ values
     ('SPONSORCODE', 'ADMINISTRATIVO', 'PATCH', 1),
     ('SPONSORCODE', 'ADMINISTRATIVO', 'DELETE', 1);
 
+insert into
+    role_permission
+values
+    ('INSTANCE-UPDATE', 'ABOGADO', 'GET', 1),
+    ('INSTANCE-UPDATE', 'ABOGADO', 'POST', 1),
+    ('INSTANCE-UPDATE', 'ABOGADO', 'PATCH', 0),
+    ('INSTANCE-UPDATE', 'ABOGADO', 'DELETE', 0),
+    ('INSTANCE-UPDATE', 'ADMINISTRATIVO', 'GET', 1),
+    ('INSTANCE-UPDATE', 'ADMINISTRATIVO', 'POST', 1),
+    ('INSTANCE-UPDATE', 'ADMINISTRATIVO', 'PATCH', 1),
+    ('INSTANCE-UPDATE', 'ADMINISTRATIVO', 'DELETE', 1);
+
 INSERT INTO
     [dbo].[politic] ([politicName])
 VALUES
@@ -3228,3 +3240,28 @@ values
         'DELETE',
         0
     );
+
+INSERT INTO
+    instance_update (
+        instanceUpdateName,
+        instanceUpdateUsed,
+        requirementId
+    )
+VALUES
+    ('Radicación', 1, 1),
+    ('Respuesta positiva', 1, 1),
+    ('Respuesta incompleta', 1, 1),
+    ('Respuesta negativa', 1, 1),
+    ('Empresa no responde', 1, 1),
+    ('Radicación', 1, 3),
+    ('Concedido', 1, 3),
+    ('No concedido', 1, 3),
+    ('Radicación', 1, 4),
+    ('Concedido', 1, 4),
+    ('No concedido', 1, 4),
+    ('Radicación', 1, 5),
+    ('Concedido', 1, 5),
+    ('No concedido', 1, 5),
+    ('Radicación', 1, 6),
+    ('Concedido', 1, 6),
+    ('No concedido', 1, 6);

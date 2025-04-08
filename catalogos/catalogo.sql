@@ -3145,6 +3145,7 @@ VALUES
     ('Respuesta incompleta', 1, 1),
     ('Respuesta negativa', 1, 1),
     ('Empresa no responde', 1, 1),
+    ('Radicación', 1, 2),
     ('Radicación', 1, 3),
     ('Concedido', 1, 3),
     ('No concedido', 1, 3),

@@ -3083,8 +3083,7 @@ INSERT INTO
         [personActive],
         [identDocId],
         [genderId],
-        [personCity],
-        [expeditionCity]
+        [personCity]
     )
 VALUES
     (
@@ -3097,8 +3096,7 @@ VALUES
         1,
         1,
         1,
-        7,
-        32
+        7
     );
 
 INSERT INTO

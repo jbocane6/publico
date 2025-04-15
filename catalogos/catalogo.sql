@@ -2840,7 +2840,9 @@ values
         'ADMINISTRATIVO',
         'DELETE',
         0
-    );
+    ),
+    ('COMPANYCOMPETENCE','OPERATIVO','PATCH',1),
+    ('COMPANYCOMPETENCE','ADMINISTRATIVO','PATCH',1);
 
 INSERT INTO
     [dbo].[politic] ([politicName])

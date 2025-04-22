@@ -2842,7 +2842,19 @@ values
         0
     ),
     ('COMPANYCOMPETENCE','OPERATIVO','PATCH',1),
-    ('COMPANYCOMPETENCE','ADMINISTRATIVO','PATCH',1);
+    ('COMPANYCOMPETENCE','ADMINISTRATIVO','PATCH',1),
+    (
+			'COMPANYCOMPETENCE',
+			'OPERATIVO',
+			'GET',
+			1
+     ),
+     (
+			'COMPANYCOMPETENCE',
+			'ADMINISTRATIVO',
+			'GET',
+			1
+     );
 
 INSERT INTO
     [dbo].[politic] ([politicName])

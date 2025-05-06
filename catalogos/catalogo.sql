@@ -2841,20 +2841,33 @@ values
         'DELETE',
         0
     ),
-    ('COMPANYCOMPETENCE','OPERATIVO','PATCH',1),
-    ('COMPANYCOMPETENCE','ADMINISTRATIVO','PATCH',1),
+    ('COMPANYCOMPETENCE', 'OPERATIVO', 'PATCH', 1),
+    ('COMPANYCOMPETENCE', 'ADMINISTRATIVO', 'PATCH', 1),
     (
-			'COMPANYCOMPETENCE',
-			'OPERATIVO',
-			'GET',
-			1
-     ),
-     (
-			'COMPANYCOMPETENCE',
-			'ADMINISTRATIVO',
-			'GET',
-			1
-     );
+        'COMPANYCOMPETENCE',
+        'OPERATIVO',
+        'GET',
+        1
+    ),
+    (
+        'COMPANYCOMPETENCE',
+        'ADMINISTRATIVO',
+        'GET',
+        1
+    ),
+    ('INSTANCE-HISTORY', 'ABOGADO', 'GET', 1),
+    ('INSTANCE-HISTORY', 'ABOGADO', 'POST', 1),
+    ('INSTANCE-HISTORY', 'ABOGADO', 'PATCH', 1),
+    ('INSTANCE-HISTORY', 'ABOGADO', 'DELETE', 1),
+    ('INSTANCE-HISTORY', 'ADMINISTRATIVO', 'GET', 1),
+    ('INSTANCE-HISTORY', 'ADMINISTRATIVO', 'POST', 1),
+    ('INSTANCE-HISTORY', 'ADMINISTRATIVO', 'PATCH', 1),
+    (
+        'INSTANCE-HISTORY',
+        'ADMINISTRATIVO',
+        'DELETE',
+        1
+    );
 
 INSERT INTO
     [dbo].[politic] ([politicName])
@@ -3161,12 +3174,15 @@ VALUES
     ('Radicación', 1, 3),
     ('Concedido', 1, 3),
     ('No concedido', 1, 3),
+    ('Respuesta en virtud de la tutela', 1, 3),
     ('Radicación', 1, 4),
     ('Concedido', 1, 4),
     ('No concedido', 1, 4),
     ('Radicación', 1, 5),
     ('Concedido', 1, 5),
     ('No concedido', 1, 5),
+    ('Respuesta en virtud de la tutela', 1, 5),
     ('Radicación', 1, 6),
     ('Concedido', 1, 6),
-    ('No concedido', 1, 6);
+    ('No concedido', 1, 6),
+    ('Respuesta en virtud de la tutela', 1, 6);

@@ -2867,7 +2867,8 @@ values
         'ADMINISTRATIVO',
         'DELETE',
         1
-    );
+    ),
+    ('MEDIA', 'CATALOGUE', 'GET', 1);
 
 INSERT INTO
     [dbo].[politic] ([politicName])

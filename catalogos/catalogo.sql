@@ -1947,7 +1947,7 @@ values
     ('USERSBUYED', 'ABOGADO', 'GET', 1),
     ('USERSBUYED', 'ABOGADO', 'PATCH', 0),
     ('USERSBUYED', 'ABOGADO', 'DELETE', 0),
-    ('WHITE-LIST', 'ABOGADO', 'POST', 0),
+    ('WHITE-LIST', 'ABOGADO', 'POST', 1),
     ('WHITE-LIST', 'ABOGADO', 'GET', 1),
     ('WHITE-LIST', 'ABOGADO', 'PATCH', 0),
     ('WHITE-LIST', 'ABOGADO', 'DELETE', 0),

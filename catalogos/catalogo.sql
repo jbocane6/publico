@@ -3100,7 +3100,11 @@ VALUES
     ('Entidad bancaria', 1),
     ('Servicios públicos', 1),
     ('Uncategorized', 1),
-    ('Sin Canal', 1);
+    ('Sin Canal', 1),
+    ('Telecomunicaciones', 1),
+    ('Ropa deportiva', 1),
+    ('Aerolíneas', 1),
+    ('Juegos de azar', 1);
 
 INSERT INTO
     [dbo].[person] (

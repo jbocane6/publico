@@ -2870,7 +2870,7 @@ values
     ),
     ('MEDIA', 'CATALOGUE', 'GET', 1),
     ('SPONSOR-LIST', 'ADMINISTRATIVO', 'GET', 1),
-    ('SPONSOR-LIST', 'ABOGADO', 'GET', 1)
+    ('SPONSOR-LIST', 'ABOGADO', 'GET', 1),
     ('ELEMENT', 'ADMINISTRATIVO', 'GET',1),
     ('ELEMENT', 'PREMIUM', 'GET',1);
 
